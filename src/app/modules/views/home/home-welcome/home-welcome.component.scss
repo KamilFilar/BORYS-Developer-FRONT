@@ -1,0 +1,96 @@
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.homeWelcome {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+  &__start {
+    position: relative;
+    top: 30%;
+
+    &__text {
+      font-family: "PlayfairDisplay", serif;
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 2.9rem;
+      color: rgb(0, 80, 150);
+      animation: slideInLeft 1s forwards;
+      animation-iteration-count: 1;
+    }
+  }
+
+  &__image {
+    background: linear-gradient(
+        270deg,
+        rgba(2, 0, 36, 0) 98%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 0) 98%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url("./../../../../../assets/images/home/welcome.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+app-hero-button {
+  animation: fadeIn ease 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 992px) {
+  .homeWelcome {
+
+
+    &__image {
+      background: linear-gradient(
+          360deg,
+          rgba(2, 0, 36, 0) 98%,
+          rgba(255, 255, 255, 1) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(2, 0, 36, 0) 98%,
+          rgba(255, 255, 255, 1) 100%
+        ),
+        url("./../../../../../assets/images/home/welcome.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+// Slide in from left animation
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-700px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// Fade in animation
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
