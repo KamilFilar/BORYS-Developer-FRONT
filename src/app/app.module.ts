@@ -17,6 +17,7 @@ import { HomeComponent } from './modules/views/home/home.component';
 import { HomeWelcomeComponent } from './modules/views/home/home-welcome/home-welcome.component';
 import { HomeOfferComponent } from './modules/views/home/home-offer/home-offer.component';
 import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-about-us.component';
+import { NavbarItemComponent } from './modules/components/navbar/navbar-item/navbar-item.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-ab
     // Components
     NavbarComponent,
     FooterComponent,
-    HeroButtonComponent
+    HeroButtonComponent,
+    NavbarItemComponent
   ],
   imports: [
     BrowserModule,

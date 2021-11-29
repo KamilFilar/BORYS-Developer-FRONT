@@ -1,0 +1,44 @@
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  height: auto;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid rgb(240, 240, 240);
+
+  &__btn {
+    border: 2px solid rgb(0, 50, 100);
+    margin-right: 25px;
+    &--icon {
+      color: rgb(0, 50, 100);
+    }
+  }
+
+  &__btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    max-height: 120px;
+  }
+
+  .navbar-brand,
+  .navbar-nav {
+    margin-top: -50px;
+  }
+
+  .navbar-nav {
+    margin-right: 75px;
+  }
+
+  app-navbar-brand {
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
