@@ -1,0 +1,49 @@
+.container-fluid {
+    margin: 20px 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.offer {
+    background-color: rgb(240, 240, 240);
+
+    &__imgBox {
+        padding: 0;
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__details {
+        padding: 5px 10px;
+        color: rgb(0, 50, 100);
+        font-family: Calibri, sans-serif;
+
+        &--name {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        &--type,
+        &--location,
+        &--area,
+        &--rooms {
+            font-size: 1.2rem;
+        }
+
+        &--price {
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding-right: 10px;
+            
+        }
+    }
+}

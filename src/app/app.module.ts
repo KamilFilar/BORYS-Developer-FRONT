@@ -19,6 +19,7 @@ import { HomeOfferComponent } from './modules/views/home/home-offer/home-offer.c
 import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-about-us.component';
 import { NavbarItemComponent } from './modules/components/navbar/navbar-item/navbar-item.component';
 import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-found.component';
+import { OfferComponent } from './modules/components/offer/offer.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-f
     FooterComponent,
     HeroButtonComponent,
     NavbarItemComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    OfferComponent
   ],
   imports: [
     BrowserModule,
