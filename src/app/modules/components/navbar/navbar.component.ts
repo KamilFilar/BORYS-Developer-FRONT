@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -25,13 +27,23 @@ export class NavbarComponent implements OnInit {
     contact: '../../../../assets/images/navbar/contact.jpg',
   }
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if(this.router.url == '/')
+    {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    else 
+    {
+      location.href = '';
+    }
   }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -15,28 +15,30 @@
     >
       <fa-icon [icon]="faBars" class="fa-lg navbar__btn--icon"></fa-icon>
     </button>
-    <div
-      class="collapse navbar-collapse justify-content-end navbar__items"
-    >
+    <div class="collapse navbar-collapse justify-content-end navbar__items">
       <ul class="navbar-nav">
         <app-navbar-item
           [value]="values.premises"
           [navItemPhoto]="photos.premises"
+          routerLink="Lokale"
         ></app-navbar-item>
 
         <app-navbar-item
           [value]="values.plot"
           [navItemPhoto]="photos.plot"
+          routerLink="Działki"
         ></app-navbar-item>
 
         <app-navbar-item
           [value]="values.houses"
           [navItemPhoto]="photos.houses"
+          routerLink="Domy"
         ></app-navbar-item>
 
         <app-navbar-item
           [value]="values.flats"
           [navItemPhoto]="photos.flats"
+          routerLink="Mieszkania"
         ></app-navbar-item>
 
         <app-navbar-item

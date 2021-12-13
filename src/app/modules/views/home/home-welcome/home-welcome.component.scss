@@ -13,7 +13,7 @@
 
   &__start {
     position: relative;
-    top: 40%;
+    top: 35%;
 
     &__text {
       font-family: "PlayfairDisplay", serif;
@@ -27,6 +27,7 @@
   }
 
   &__image {
+    //margin-bottom: -5px;
     background: linear-gradient(
         270deg,
         rgba(2, 0, 36, 0) 98%,
