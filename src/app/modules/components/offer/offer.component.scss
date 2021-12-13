@@ -11,10 +11,18 @@ p {
 }
 
 .offer {
-    background-color: rgb(240, 240, 240);
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    transition-duration: .3s;
+
+    &:hover {
+        background-color: rgb(245, 245, 245);
+        transition-duration: .3s;
+    }
 
     &__imgBox {
         padding: 0;
+        margin: auto 0;
 
         &__img {
             width: 100%;
@@ -40,10 +48,15 @@ p {
         }
 
         &--price {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
             font-size: 1.6rem;
             font-weight: bold;
-            padding-right: 10px;
-            
+        }
+
+        &--margin {
+            margin-top: 5px;
         }
     }
 }
