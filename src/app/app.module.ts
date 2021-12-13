@@ -20,6 +20,12 @@ import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-ab
 import { NavbarItemComponent } from './modules/components/navbar/navbar-item/navbar-item.component';
 import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-found.component';
 import { OfferComponent } from './modules/components/offer/offer.component';
+import { PremisesComponent } from './modules/views/offertype/premises/premises.component';
+import { HousesComponent } from './modules/views/offertype/houses/houses.component';
+import { ApartmentsComponent } from './modules/views/offertype/apartments/apartments.component';
+import { PlotsComponent } from './modules/views/offertype/plots/plots.component';
+import { PrivacyPolicyComponent } from './modules/views/privacy-policy/privacy-policy.component';
+import { CookiesInfoComponent } from './modules/views/cookies-info/cookies-info.component';
 
 
 @NgModule({
@@ -36,7 +42,13 @@ import { OfferComponent } from './modules/components/offer/offer.component';
     HeroButtonComponent,
     NavbarItemComponent,
     PageNotFoundComponent,
-    OfferComponent
+    OfferComponent,
+    PremisesComponent,
+    HousesComponent,
+    ApartmentsComponent,
+    PlotsComponent,
+    PrivacyPolicyComponent,
+    CookiesInfoComponent
   ],
   imports: [
     BrowserModule,
