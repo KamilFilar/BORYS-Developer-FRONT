@@ -41,7 +41,7 @@ export class NavbarComponent implements OnInit {
       location.href = '';
     }
   }
-
+  
   ngOnInit(): void {
     
   }
