@@ -13,6 +13,7 @@ import { NavbarItemComponent } from './modules/components/navbar/navbar-item/nav
 import { FooterComponent } from './modules/components/footer/footer.component';
 import { HeroButtonComponent } from './modules/components/hero-button/hero-button.component';
 import { OfferComponent } from './modules/components/offer/offer.component';
+import { ButtonComponent } from './modules/components/button/button.component';
 // Import views
 import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-found.component';
 import { PrivacyPolicyComponent } from './modules/views/privacy-policy/privacy-policy.component';
@@ -24,16 +25,15 @@ import { PlotsComponent } from './modules/views/offertype/plots/plots.component'
 // Home
 import { HomeComponent } from './modules/views/home/home.component';
 import { HomeWelcomeComponent } from './modules/views/home/home-welcome/home-welcome.component';
+import { HomeSearchOfferComponent } from './modules/views/home/home-search-offer/home-search-offer.component';
 import { HomeOfferComponent } from './modules/views/home/home-offer/home-offer.component';
 import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-about-us.component';
 import { HomeContactComponent } from './modules/views/home/home-contact/home-contact.component';
-import { SearchOfferComponent } from './modules/components/search-offer/search-offer.component';
 // Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { ButtonComponent } from './modules/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -49,16 +49,16 @@ import { ButtonComponent } from './modules/components/button/button.component';
     // Home
     HomeComponent,
     HomeWelcomeComponent,
+    HomeSearchOfferComponent,
     HomeOfferComponent,
     HomeAboutUsComponent,
+    HomeContactComponent,
     // Components
     NavbarComponent,
     NavbarItemComponent,
     FooterComponent,
     HeroButtonComponent,
     OfferComponent,
-    HomeContactComponent,
-    SearchOfferComponent,
     ButtonComponent,
   ],
   imports: [
@@ -72,7 +72,6 @@ import { ButtonComponent } from './modules/components/button/button.component';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule
-
   ],
   providers: [
     // Services

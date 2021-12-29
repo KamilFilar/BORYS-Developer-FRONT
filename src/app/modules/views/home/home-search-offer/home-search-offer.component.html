@@ -18,8 +18,8 @@
                         <mat-form-field appearance="fill">
                             <mat-label>Sprzedaż/wynajem</mat-label>
                             <mat-select>
-                              <mat-option *ngFor="let food of foods" [value]="food.value">
-                                {{food.viewValue}}
+                              <mat-option *ngFor="let type of arrayType" [value]="type.value">
+                                {{type.viewValue}}
                               </mat-option>
                             </mat-select>
                           </mat-form-field>
@@ -28,8 +28,8 @@
                         <mat-form-field appearance="fill">
                             <mat-label>Typ nieruchomości</mat-label>
                             <mat-select>
-                              <mat-option *ngFor="let food of foods" [value]="food.value">
-                                {{food.viewValue}}
+                              <mat-option *ngFor="let offer of arrayOffer" [value]="offer.value">
+                                {{offer.viewValue}}
                               </mat-option>
                             </mat-select>
                           </mat-form-field>
