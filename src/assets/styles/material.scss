@@ -1,0 +1,48 @@
+
+
+// Set angular material style
+::ng-deep .mat-form-field {
+    width: 100%;
+    height: auto;
+    border: 0.01em solid rgba(112, 128, 144, 0.4);
+    border-radius: 5px;
+    font-size: 1rem;
+
+    .mat-form-field-label {
+        color: rgb(0, 50, 100);
+    }
+
+    span {
+        color: rgb(0, 50, 100);
+    }
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    border-radius: 5px;
+}
+
+::ng-deep .mat-form-field.mat-focused {
+    .mat-form-field-label {
+        color: rgb(0, 80, 170);
+    }
+    .mat-form-field-ripple {
+        background-color: rgb(0, 80, 170);
+    }
+    .mat-input-element {
+        color: rgb(0, 80, 170);
+        margin-left: 3px;
+    }
+}
+
+::ng-deep .mat-form-field:hover {
+    .mat-form-field-ripple {
+        background-color: rgb(0, 50, 100);
+    }
+}
+
+::ng-deep .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: rgb(0, 80, 170);
+}
+::ng-deep .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: rgb(0, 80, 170);
+}

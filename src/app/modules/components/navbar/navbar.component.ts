@@ -32,16 +32,14 @@ export class NavbarComponent implements OnInit {
   ) { }
 
   scrollToTop() {
-    if(this.router.url == '/')
-    {
+    if (this.router.url == '/' || this.router.url == '/#Promowane' || this.router.url == '/#Kontakt') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    else 
-    {
+    else {
       location.href = '';
     }
   }
-  
+
   ngOnInit(): void {
   }
 

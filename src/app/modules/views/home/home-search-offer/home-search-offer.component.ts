@@ -4,7 +4,10 @@ import { PropertiesOffer } from 'src/app/config/interfaces/properties-offer';
 @Component({
   selector: 'app-home-search-offer',
   templateUrl: './home-search-offer.component.html',
-  styleUrls: ['./home-search-offer.component.scss']
+  styleUrls: [
+    './home-search-offer.component.scss',
+    '../../../../../assets/styles/material.scss'
+  ]
 })
 
 export class HomeSearchOfferComponent implements OnInit {
@@ -18,7 +21,7 @@ export class HomeSearchOfferComponent implements OnInit {
   ];
   arrayType: PropertiesOffer[] = [
     { value: 'rent', viewValue: 'Wynajem'},
-    { value: 'sell', viewValue: 'Sprzedaż'}
+    { value: 'sell', viewValue: 'Kupno'}
   ];
   
   constructor() { }
