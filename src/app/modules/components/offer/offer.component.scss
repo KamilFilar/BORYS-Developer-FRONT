@@ -6,17 +6,15 @@
     }
 }
 
-p {
-    margin: 0;
-}
-
 .offer {
     position: relative;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(252, 252, 252);
+    border: 0.01em solid rgba(112, 128, 144, 0.2);
     transition-duration: .3s;
 
     &:hover {
-        background-color: rgb(245, 245, 245);
+        background-color: rgb(247, 247, 247);
+        border: 0.01em solid rgba(112, 128, 144, 0.3);
         transition-duration: .3s;
     }
 
@@ -31,12 +29,12 @@ p {
     }
 
     &__details {
-        padding: 5px 10px;
         color: rgb(0, 50, 100);
         font-family: Calibri, sans-serif;
 
         &--name {
-            font-size: 1.6rem;
+            margin: 10px 0 3px;
+            font-size: 1.5rem;
             font-weight: 600;
         }
 
@@ -44,6 +42,7 @@ p {
         &--location,
         &--area,
         &--rooms {
+            margin: 3px 0;
             font-size: 1.2rem;
         }
 
