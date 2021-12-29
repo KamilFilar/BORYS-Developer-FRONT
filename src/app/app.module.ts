@@ -27,6 +27,13 @@ import { HomeWelcomeComponent } from './modules/views/home/home-welcome/home-wel
 import { HomeOfferComponent } from './modules/views/home/home-offer/home-offer.component';
 import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-about-us.component';
 import { HomeContactComponent } from './modules/views/home/home-contact/home-contact.component';
+import { SearchOfferComponent } from './modules/components/search-offer/search-offer.component';
+// Angular Material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { ButtonComponent } from './modules/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -50,14 +57,22 @@ import { HomeContactComponent } from './modules/views/home/home-contact/home-con
     FooterComponent,
     HeroButtonComponent,
     OfferComponent,
-    HomeContactComponent
+    HomeContactComponent,
+    SearchOfferComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     // API
-    HttpClientModule
+    HttpClientModule,
+    // Angular Material
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
+
   ],
   providers: [
     // Services

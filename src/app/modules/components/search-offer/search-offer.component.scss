@@ -1,5 +1,5 @@
-.promoted {
-    margin-top: 100px;
+.searchOffer {
+    margin-top: 50px;
     &--text {
       font-family: "PlayfairDisplay", serif;
       font-size: 2.2rem;
@@ -8,4 +8,13 @@
       color: rgb(0, 50, 100);
       text-align: center;
     }
+    
+    &__formWrapper {
+      border: 1px solid blue;
+      padding: 5px 10px 0;
+    }
+}
+
+mat-form-field {
+  width: 100%;
 }

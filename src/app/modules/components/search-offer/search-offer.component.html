@@ -1,0 +1,71 @@
+<div class="container-fluid">
+    <div class="row justify-content-center" style="border: 1px solid green;">
+        <div class="col-11 searchOffer">
+            <p class="searchOffer--text">Szukaj</p>
+            <div class="row justify-content-center" style="border: 1px solid red">
+                <div class="row justify-content-center">
+                    <div class="col-11 searchOffer__formWrapper">
+                        <form class="searchOffer__formWrapper__form--name">
+                            <mat-form-field appearance="fill">
+                              <mat-label>Nazwa nieruchomości</mat-label>
+                              <input matInput placeholder="Podaj nazwę nieruchomości">
+                            </mat-form-field>
+                          </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2" style="border: 1px solid blue">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Sprzedaż/wynajem</mat-label>
+                            <mat-select>
+                              <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                    <div class="col-3" style="border: 1px solid blue">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Typ nieruchomości</mat-label>
+                            <mat-select>
+                              <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                    <div class="col-3" style="border: 1px solid blue">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Lokalizacja</mat-label>
+                            <input matInput placeholder="Ex. Pizza" value="Sushi">
+                          </mat-form-field>
+                    </div>
+                    <div class="col-3" style="border: 1px solid blue">
+                        <div class="row">
+                            <div class="col-12">
+                                Powierzchnia
+                            </div>
+                            <div class="col-6">
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <mat-label>Min m<sup>2</sup></mat-label>
+                                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                                  </mat-form-field>
+                            </div>
+                            <div class="col-6">
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <mat-label>Max m<sup>2</sup></mat-label>
+                                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                                  </mat-form-field>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <app-button [name]='searchText'></app-button>    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

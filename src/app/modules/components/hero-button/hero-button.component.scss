@@ -5,7 +5,7 @@
   border-right: none !important;
   border-bottom: 2px solid rgb(0, 50, 100);
   border-left: none !important;
-  padding: 7px 25px;
+  padding: 10px 25px;
   font-size: 1.5rem;
   color: rgb(0, 50, 100);
   transition-duration: 0.5s;
@@ -14,16 +14,16 @@
     font-weight: 600;
     font-family: "PlayfairDisplay", serif;
   }
-}
 
-.heroBtn:hover {
-  border-top: 2px solid rgb(0, 60, 120);
-  border-bottom: 2px solid rgb(0, 60, 120);
-  color: rgb(0, 60, 120);
-  letter-spacing: 3px;
-  transition-duration: 0.5s;
-}
+  &:hover {
+    border-top: 2px solid rgb(0, 60, 120);
+    border-bottom: 2px solid rgb(0, 60, 120);
+    color: rgb(0, 60, 120);
+    letter-spacing: 3px;
+    transition-duration: 0.5s;
+  }
 
-.heroBtn:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
