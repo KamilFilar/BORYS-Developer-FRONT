@@ -1,1 +1,44 @@
-<p id='Kontakt'>home-contact works!</p>
+<div class="container-fluid contact" id="Kontakt">
+    <app-tittle [name]='contactText'></app-tittle>
+    <div class="row justify-content-center">
+        <div class="col-md-9 col-sm-10 col-11">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-sm-11 col-12 contact__form">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Twoje dane</mat-label>
+                        <input 
+                            type='text' 
+                            matInput 
+                            placeholder="Np. imię i nazwisko"
+                        />
+                      </mat-form-field> 
+                </div>
+                <div class="col-md-10 col-sm-11 col-12 contact__form">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Adres email</mat-label>
+                        <input 
+                            type='email' 
+                            matInput 
+                            placeholder="Podaj swój adres email"
+                        />
+                      </mat-form-field> 
+                </div>
+                <div class="col-md-10 col-sm-11 col-12 contact__form">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Treść wiadomości</mat-label>
+                        <textarea 
+                            matInput 
+                            placeholder="W czym możemy pomóc?"
+                            cdkTextareaAutosize
+                            cdkAutosizeMinRows="4"
+                        ></textarea>
+                    </mat-form-field> 
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 contact__btn">
+            <app-button [name]='sendBtnText'></app-button>
+        </div>
+    </div>
+</div>
