@@ -14,7 +14,7 @@ export class ContactService {
     private https: HttpClient
   ) { }
 
-  sendEmail(email: string, name: string, lastName: string, phone: number, subject: string, content: string) 
+  sendEmail(email: string, name: string, lastName: string, phone: string, subject: string, content: string) 
   {  
     const headers = new HttpHeaders().append(
       'Content-Type',

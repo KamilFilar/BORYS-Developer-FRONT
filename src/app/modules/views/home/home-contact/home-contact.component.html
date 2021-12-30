@@ -7,9 +7,9 @@
                     <mat-form-field appearance="fill">
                         <mat-label>Twoje dane</mat-label>
                         <input 
-                            type='text' 
+                            type='text'
                             matInput 
-                            placeholder="Np. imię i nazwisko"
+                            placeholder="Imię i nazwisko (rozdzielone spacją)"
                         />
                       </mat-form-field> 
                 </div>
@@ -17,7 +17,7 @@
                     <mat-form-field appearance="fill">
                         <mat-label>Adres email</mat-label>
                         <input 
-                            type='email' 
+                            type='email'
                             matInput 
                             placeholder="Podaj swój adres email"
                         />
@@ -25,9 +25,19 @@
                 </div>
                 <div class="col-md-10 col-sm-11 col-12 contact__form">
                     <mat-form-field appearance="fill">
+                        <mat-label>Numer telefonu</mat-label>
+                        <input 
+                            type='tel'
+                            matInput 
+                            placeholder="Podaj swój numer telefonu"
+                        />
+                      </mat-form-field> 
+                </div>
+                <div class="col-md-10 col-sm-11 col-12 contact__form">
+                    <mat-form-field appearance="fill">
                         <mat-label>Treść wiadomości</mat-label>
                         <textarea 
-                            matInput 
+                            matInput
                             placeholder="W czym możemy pomóc?"
                             cdkTextareaAutosize
                             cdkAutosizeMinRows="4"
@@ -38,7 +48,10 @@
 
         </div>
         <div class="col-12 contact__btn">
-            <app-button [name]='sendBtnText'></app-button>
+            <app-button 
+            [name]='sendBtnText'
+            (click)='sendMsg()'
+            ></app-button>
         </div>
     </div>
 </div>
