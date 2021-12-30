@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PropertiesOffer } from 'src/app/config/interfaces/properties-offer';
 
 @Component({
@@ -12,6 +12,7 @@ import { PropertiesOffer } from 'src/app/config/interfaces/properties-offer';
 
 export class HomeSearchOfferComponent implements OnInit {
 
+  searchOffer = 'Znajdź nieruchomość dopasowaną do siebie';
   searchText = 'Wyszukaj';
   arrayOffer: PropertiesOffer[] = [
     { value: 'premises', viewValue: 'Lokale' },
@@ -23,6 +24,8 @@ export class HomeSearchOfferComponent implements OnInit {
     { value: 'rent', viewValue: 'Wynajem'},
     { value: 'sell', viewValue: 'Kupno'}
   ];
+
+  
   
   constructor() { }
 

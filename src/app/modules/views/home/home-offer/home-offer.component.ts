@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeOfferComponent implements OnInit {
 
+  promotedText = 'Promowane oferty';
+
   constructor() { }
 
   ngOnInit(): void {

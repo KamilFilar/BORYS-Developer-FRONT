@@ -34,6 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { TittleComponent } from './modules/components/tittle/tittle.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { MatSelectModule } from '@angular/material/select';
     HeroButtonComponent,
     OfferComponent,
     ButtonComponent,
+    TittleComponent,
   ],
   imports: [
     BrowserModule,

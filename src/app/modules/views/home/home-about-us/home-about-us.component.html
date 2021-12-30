@@ -1,1 +1,31 @@
-<p>home-about-us works!</p>
+<div class="container-fluid aboutUs">
+    <app-tittle [name]='aboutUsText'></app-tittle>
+    <div class="row justify-content-center">
+        <div class="col-xl-10 col-lg-10 col-md-11 col-12">
+            <p class="aboutUs__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed bibendum augue, id bibendum mi.
+                Integer semper, metus vitae ornare commodo, dolor nibh accumsan enim, ac fringilla nibh dui ac erat.
+                Etiam placerat consequat nulla id malesuada. Duis sed rhoncus sapien. Donec viverra risus ac urna
+                interdum dignissim. Fusce cursus molestie nisi, et posuere lacus volutpat vitae. Donec dignissim tellus
+                eu risus tincidunt, sed aliquet erat commodo. Nulla interdum mattis leo in tincidunt. Vestibulum ante
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras efficitur vehicula sem non
+                posuere. Pellentesque nec arcu euismod, dictum erat at, elementum odio. Nullam feugiat urna sed ligula
+                feugiat mollis.
+                <span class="aboutUs__text--special">osiedle Skowronków </span> i
+                <span class="aboutUs__text--special">apartamenty Wesoła</span>.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-11 aboutUs__imgBox">
+            <a href='http://skowronkow.com/'>
+                <img [src]='skowronkowIMG'/>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-8 aboutUs__imgBox">
+            <a href='https://apartamentywesola.com/'>
+                <img [src]='wesolaIMG'/>
+            </a>
+        </div>
+    </div>
+</div>
