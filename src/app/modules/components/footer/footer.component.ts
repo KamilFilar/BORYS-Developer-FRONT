@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +10,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+
+  faMobileAlt = faMobileAlt;
+  faMailBulk = faMailBulk;
+  faMapMarkedAlt = faMapMarkedAlt;
+  faCalendarCheck = faCalendarCheck;
+  logoIMG = './../../../../assets/images/footer/logo.png';
+
+  actualYear: number = new Date().getFullYear();
 
   constructor() { }
 

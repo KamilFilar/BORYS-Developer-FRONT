@@ -1,1 +1,52 @@
-<p>footer works!</p>
+<div class="container-fluid footer">
+    <div class="row justify-content-center footer--border">
+        <div class="col-xl-4 col-12 footer__logo text-center">
+            <img [src]='logoIMG'/>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="row footer--space">
+                <div class="col-3 footer__icon">
+                    <fa-icon [icon]='faMobileAlt' class="fa-2x footer--icon"></fa-icon>
+                </div>
+                <div class="col-9 footer__text">
+                    <p>+48 600 467 817</p>
+                    <p>+48 606 691 578</p>
+                </div>
+            </div>
+            <div class="row footer--space">
+                <div class="col-3 footer__icon">
+                    <fa-icon [icon]='faMailBulk' class="fa-2x footer--icon"></fa-icon>
+                </div>
+                <div class="col-9 footer__text">
+                    <p>grupaborysdeweloper@wp.pl</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="row footer--space">
+                <div class="col-3 footer__icon">
+                    <fa-icon [icon]='faCalendarCheck' class="fa-2x footer--icon"></fa-icon>
+                </div>
+                <div class="col-9 footer__text">
+                    <p>Poniedziałek - Piątek</p>
+                    <p>8:00 - 16:00</p>
+                </div>
+            </div>
+            <div class="row footer--space">
+                <div class="col-3 footer__icon">
+                    <fa-icon [icon]='faMapMarkedAlt' class="fa-2x footer--icon"></fa-icon>
+                </div>
+                <div class="col-9 footer__text">
+                    <p>GAWRZYŁOWSKA 69A</p>
+                    <p>39-200 Dębica</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 footer__copyright">
+            <p>
+            Copyright <span class="footer__copyright--color">©</span> 
+            {{ actualYear }} grupa BORYS nieruchomości
+            </p>
+        </div>
+    </div>
+</div>
