@@ -1,0 +1,21 @@
+.offers {
+    position: relative;
+    min-height: 75vh;
+
+    &--tittle {
+        padding-top: 200px;
+        transition-duration: 0.5s;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .offers {
+        min-height: 80vh;
+    
+        &--tittle {
+            padding-top: 150px;
+            transition-duration: 0.5s;
+        }
+    }
+  }

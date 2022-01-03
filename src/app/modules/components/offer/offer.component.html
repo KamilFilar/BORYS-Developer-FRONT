@@ -3,49 +3,49 @@
         <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 offer">
             <div class="row">
                 <div class="col-md-4 col-12 offer__imgBox">
-                    <img src='./../../../../assets/images/navbar/houses.jpg' class="offer__imgBox__img" />
+                    <img [src]='offerImagePath' class="offer__imgBox__img" />
                 </div>
                 <div class="col-md-8 col-12 offer__details">
                     <div class="row">
                         <div class="col-12">
                             <p class="offer__details--name">
-                                Nazwa oferty
+                                {{ offerTitle }}
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <p class="offer__details--type">
-                                Dom na sprzedaż
+                                {{ offerCategory }} na {{ offerType }}
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <p class="offer__details--location">
-                                Lokalizacja: Kurwidołki większe 15B
+                                Lokalizacja: {{ offerCity }} {{ offerStreet }}
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <p class="offer__details--area">
-                                Powierzchnia: 120 m<sup>2</sup>
-                                <span> (7 000 zł/m<sup>2</sup>)</span>
+                                Powierzchnia: {{ offerArea }} m<sup>2</sup>
+                                <span> ({{ calcPriceArea() }} PLN/m<sup>2</sup>)</span>
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <p class="offer__details--rooms">
-                                Ilość pokoi: 6
+                                Ilość pokoi: {{ offerRooms }}
                             </p>
                         </div>
                     </div>
                     <div class="row offer__details--margin">
                         <div class="col-12">
                             <p class="offer__details--price">
-                                1 200 000 zł
+                                {{ offerPrice }} PLN
                             </p>
                         </div>
                     </div>

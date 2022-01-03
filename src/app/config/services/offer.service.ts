@@ -24,7 +24,7 @@ export class OfferService {
     if (typeOfOffer == '')
       return;
 
-    return this.https.get(this.baseURL + '/' + typeOfOffer).toPromise();
+    return this.https.get(this.baseURL + '/all?rodzaj=' + typeOfOffer).toPromise();
   }
   
   // Method to filtr special params

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-offer',
@@ -7,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferComponent implements OnInit {
 
+  @Input() offerImagePath = '';
+  @Input() offerTitle = '';
+  @Input() offerCategory = '';
+  @Input() offerType = '';
+  @Input() offerCity = '';
+  @Input() offerStreet = '';
+  @Input() offerArea = '';
+  @Input() offerRooms = '';
+  @Input() offerPrice = '';
+
   constructor() { }
+
+  calcPriceArea() {
+    return (parseFloat(this.offerPrice)/parseFloat(this.offerArea)).toFixed(2);
+  }
 
   ngOnInit(): void {
   }
