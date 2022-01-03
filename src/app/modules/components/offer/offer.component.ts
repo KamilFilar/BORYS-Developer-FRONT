@@ -22,6 +22,13 @@ export class OfferComponent implements OnInit {
   calcPriceArea() {
     return (parseFloat(this.offerPrice)/parseFloat(this.offerArea)).toFixed(2);
   }
+  
+  isPlot() {
+    if(this.offerCategory == 'działka')
+      return true;
+
+    return false;
+  }
 
   ngOnInit(): void {
   }

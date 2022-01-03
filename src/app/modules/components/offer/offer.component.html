@@ -35,7 +35,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" *ngIf='isPlot() == false'>
                         <div class="col-12">
                             <p class="offer__details--rooms">
                                 Ilość pokoi: {{ offerRooms }}
