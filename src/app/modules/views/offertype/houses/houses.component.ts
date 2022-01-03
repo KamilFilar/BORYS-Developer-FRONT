@@ -5,7 +5,7 @@ import { OfferService } from 'src/app/config/services/offer.service';
   selector: 'app-houses',
   templateUrl: './houses.component.html',
   styleUrls: [
-    './../../../../../assets/styles/offers.scss'  
+    './../../../../../assets/styles/offers.scss'
   ]
 })
 export class HousesComponent implements OnInit {
@@ -25,15 +25,22 @@ export class HousesComponent implements OnInit {
         this.offerObjectLength = this.offerObject.length;
       }
     );
-
   }
 
   counter() {
     return new Array(this.offerObjectLength);
   }
 
+  isOfferExist() {
+    if (this.offerObjectLength != 0)
+      return true
+
+    return false;
+  }
+
   ngOnInit(): void {
     this.getHouses();
+    this.isOfferExist();
   }
 
 }

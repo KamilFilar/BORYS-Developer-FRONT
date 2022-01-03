@@ -1,6 +1,7 @@
 .offers {
     position: relative;
     min-height: 75vh;
+    animation: fadein 2s;
 
     &--tittle {
         padding-top: 200px;
@@ -8,14 +9,46 @@
     }
 }
 
-
 @media only screen and (max-width: 1199px) {
     .offers {
         min-height: 80vh;
-    
+
         &--tittle {
             padding-top: 150px;
             transition-duration: 0.5s;
         }
     }
-  }
+}
+
+.fadeInFooter {
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

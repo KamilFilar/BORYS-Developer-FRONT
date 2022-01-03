@@ -27,15 +27,22 @@ export class PremisesComponent implements OnInit {
         console.log(this.offerObject[0].images[0].image_path)
       }
     );
-
   }
 
   counter() {
     return new Array(this.offerObjectLength);
   }
 
+  isOfferExist() {
+    if (this.offerObjectLength != 0)
+      return true
+
+    return false;
+  }
+
   ngOnInit(): void {
     this.getPremises();
+    this.isOfferExist();
   }
 
 }

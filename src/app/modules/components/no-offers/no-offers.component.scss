@@ -1,0 +1,25 @@
+.container-fluid {
+    margin: 20px 0;
+}
+
+.noOffer {
+    position: relative;
+    padding: 15px 0 5px;
+    background-color: rgb(252, 252, 252);
+    border: 0.01em solid rgba(112, 128, 144, 0.2);
+
+    &--text {
+        font-family: "PlayfairDisplay", serif;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: rgb(0, 50, 100);
+        text-align: center;
+        margin-right: 0px;
+        display: inline-block;
+    }
+
+    & img {
+        margin: -14px 0 0 10px;
+        clear: both;
+    }
+}

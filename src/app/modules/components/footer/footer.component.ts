@@ -7,7 +7,10 @@ import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: [
+    './footer.component.scss',
+    './../../../../assets/styles/offers.scss'
+  ]
 })
 export class FooterComponent implements OnInit {
 
