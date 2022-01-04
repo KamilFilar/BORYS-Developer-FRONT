@@ -10,6 +10,7 @@ import { PlotsComponent } from './modules/views/offertype/plots/plots.component'
 import { PremisesComponent } from './modules/views/offertype/premises/premises.component';
 import { CookiesInfoComponent } from './modules/views/cookies-info/cookies-info.component';
 import { PrivacyPolicyComponent } from './modules/views/privacy-policy/privacy-policy.component';
+import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'Domy', component: HousesComponent },
   { path: 'Działki', component: PlotsComponent },
   { path: 'Lokale', component: PremisesComponent },
+  { path: 'Wyszukane', component: SearchOfferResultComponent },
   { path: 'Polityka prywatności', component: PrivacyPolicyComponent },
   { path: 'Cookies', component: CookiesInfoComponent },
   { path: '404', component: PageNotFoundComponent },

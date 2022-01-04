@@ -36,6 +36,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { TittleComponent } from './modules/components/tittle/tittle.component';
 import { NoOffersComponent } from './modules/components/no-offers/no-offers.component';
+import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { NoOffersComponent } from './modules/components/no-offers/no-offers.comp
     ButtonComponent,
     TittleComponent,
     NoOffersComponent,
+    SearchOfferResultComponent,
   ],
   imports: [
     BrowserModule,

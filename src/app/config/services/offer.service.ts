@@ -26,11 +26,9 @@ export class OfferService {
     return this.https.get(this.baseURL + '/all?rodzaj=' + typeOfOffer).toPromise();
   }
   
-  getParamsOffers()
+  getParamsOffers(name: any, type: any, category: any, location: any)
   {
-    // To do later
-    // 1. Redirect to to subpage by type (onclick in filtrbox)
-    // 2. Get list only offer == params
+    return this.https.get(this.baseURL + '/all?tytul='+name+'&typ='+category+'&rodzaj='+type+'&miasto='+location).toPromise();
   }
 
 }

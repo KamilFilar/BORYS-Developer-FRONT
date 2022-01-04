@@ -15,7 +15,7 @@
                     <div class="col-xl-2 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
                         <mat-form-field appearance="fill">
                             <mat-label>Rodzaj oferty</mat-label>
-                            <mat-select>
+                            <mat-select (selectionChange)="changeCategoryOffer($event.value)">
                               <mat-option *ngFor="let type of arrayType" [value]="type.value">
                                 {{type.viewValue}}
                               </mat-option>
@@ -25,7 +25,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
                         <mat-form-field appearance="fill">
                             <mat-label>Typ nieruchomości</mat-label>
-                            <mat-select>
+                            <mat-select (selectionChange)="changeTypeOffer($event.value)">
                               <mat-option *ngFor="let offer of arrayOffer" [value]="offer.value">
                                 {{offer.viewValue}}
                               </mat-option>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-12 searchOffer__btn">
-                    <app-button [name]='searchText'></app-button>    
+                    <app-button [name]='searchText' (click)='sendData()'></app-button>    
                 </div>
             </div>
         </div>

@@ -23,8 +23,6 @@ export class HomeOfferComponent implements OnInit {
       (res) => {
         this.offerObject = res;
         this.offerObjectlength = this.offerObject.length;
-        console.log(this.offerObject);
-        
       }
     );
   }
