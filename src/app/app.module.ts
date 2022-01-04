@@ -16,7 +16,6 @@ import { OfferComponent } from './modules/components/offer/offer.component';
 import { ButtonComponent } from './modules/components/button/button.component';
 // Import views
 import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-found.component';
-import { PrivacyPolicyComponent } from './modules/views/privacy-policy/privacy-policy.component';
 import { CookiesInfoComponent } from './modules/views/cookies-info/cookies-info.component';
 import { PremisesComponent } from './modules/views/offertype/premises/premises.component';
 import { HousesComponent } from './modules/views/offertype/houses/houses.component';
@@ -46,7 +45,6 @@ import { SearchOfferResultComponent } from './modules/views/offertype/search-off
     AppComponent,
     // Views
     PageNotFoundComponent,
-    PrivacyPolicyComponent,
     CookiesInfoComponent,
     PremisesComponent,
     HousesComponent,
