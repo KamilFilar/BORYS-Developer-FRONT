@@ -40,12 +40,26 @@
                             matInput
                             placeholder="W czym możemy pomóc?"
                             cdkTextareaAutosize
-                            cdkAutosizeMinRows="4"
+                            cdkAutosizeMinRows="5"
+                            cdkAutosizeMaxRows="15"
                         ></textarea>
                     </mat-form-field> 
                 </div>
+                <div class="col-md-10 col-sm-11 col-12 contact__form">
+                    <div class="row">
+                        <div class="col-1 contact__form--checkbox text-end">
+                            <mat-checkbox #c (click)="isChecked(!c.checked)"></mat-checkbox>
+                        </div>
+                        <div class="col-11">
+                            <p class="contact__form__text">
+                                Wyrażam zgodę na wykorzystywanie moich danych w celu przetwarzania mojego zgłoszenia. 
+                                Informacje i pouczenie o prawie do odwołania zgody są zawarte w 
+                                <a class="contact__form__text--href" target="_blank" [href]='politicSRC'>polityce prywatności</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
         <div class="col-12 contact__btn">
             <app-button 
