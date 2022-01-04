@@ -4,7 +4,21 @@
             <app-tittle [name]='promotedText'></app-tittle>
         </div>
     </div>
+    <div *ngIf='isOfferExist()'>
+        <div *ngFor='let offer of counter(); let i = index'>
+            <app-offer 
+                [offerImagePath]='offerObject[i].images[0].image_path' 
+                [offerTitle]='offerObject[i].tytul'
+                [offerCategory]='offerObject[i].rodzaj' 
+                [offerType]='offerObject[i].typ'
+                [offerCity]='offerObject[i].miasto' 
+                [offerStreet]='offerObject[i].ulica'
+                [offerArea]='offerObject[i].powierzchnia' 
+                [offerRooms]='offerObject[i].liczba_pokoi'
+                [offerPrice]='offerObject[i].cena'
+            >
+            </app-offer>
+        </div>
+    </div>
 </div>
-<app-offer></app-offer>
-<app-offer></app-offer>
-<app-offer></app-offer>
+

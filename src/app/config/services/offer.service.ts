@@ -18,7 +18,6 @@ export class OfferService {
     return this.https.get(this.baseURL + '/all').toPromise();
   }
 
-  // Method to get offer by type
   getTypeOffers(typeOfOffer: string) 
   {
     if (typeOfOffer == '')
@@ -27,7 +26,6 @@ export class OfferService {
     return this.https.get(this.baseURL + '/all?rodzaj=' + typeOfOffer).toPromise();
   }
   
-  // Method to filtr special params
   getParamsOffers()
   {
     // To do later
