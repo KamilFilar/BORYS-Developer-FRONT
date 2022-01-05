@@ -13,6 +13,13 @@ export class HomeWelcomeComponent implements OnInit {
 
   constructor() { }
 
+  scrollToContent() {
+    let yOffset = 200;
+    const el = document.getElementById('Promowane');
+    const target = el!.getBoundingClientRect().top + window.pageYOffset - yOffset;
+    window.scrollTo({ top: target, behavior: 'smooth' });
+  }
+
   ngOnInit(): void {
   }
 

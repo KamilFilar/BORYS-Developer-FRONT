@@ -36,12 +36,12 @@
           [navItemPhoto]="photos.flats" 
           routerLink="Mieszkania">
         </app-navbar-item>
-        <a href="#Kontakt">
-          <app-navbar-item 
-            [value]="values.contact" 
-            [navItemPhoto]="photos.contact">
-          </app-navbar-item>
-        </a>
+        <app-navbar-item 
+          [value]="values.contact" 
+          [navItemPhoto]="photos.contact"
+          (click)="scrollToContact()"
+        >
+        </app-navbar-item>
       </ul>
     </div>
   </div>

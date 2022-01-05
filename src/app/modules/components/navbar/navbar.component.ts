@@ -40,6 +40,13 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  scrollToContact() {
+    let yOffset = 200;
+    const el = document.getElementById('Kontakt');
+    const target = el!.getBoundingClientRect().top + window.pageYOffset - yOffset;
+    window.scrollTo({ top: target, behavior: 'smooth' });
+  }
+
   ngOnInit(): void {
   }
 
