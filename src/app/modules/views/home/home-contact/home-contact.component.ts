@@ -38,7 +38,11 @@ export class HomeContactComponent implements OnInit {
     let content = document.getElementsByTagName("textarea")[0].value;
 
     const arrayName = stringName.split(" ");
-    if (arrayName[0] == '' || arrayName[1] == '') {
+    if(!emailAddres && !phoneNumber && !content && !stringName) {
+      this.modalTittle = 'Wiadomość nie została wysłana!';
+      this.modalMsg = 'Uzupełnij poprawnie poniższy formularz i wyraź zgodę na wykorzystanie zawartych w nim danych.';
+    }
+    else if (arrayName[0] == '' || arrayName[1] == '') {
       this.modalTittle = 'Wiadomość nie została wysłana!';
       this.modalMsg = 'Wpisz poprawnie imię i nazwisko (rozdzielone spacją)';
     }

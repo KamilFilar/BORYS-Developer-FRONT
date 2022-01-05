@@ -15,7 +15,7 @@
                 [offerStreet]='offerObject[i].ulica'
                 [offerArea]='offerObject[i].powierzchnia' 
                 [offerRooms]='offerObject[i].liczba_pokoi'
-                [offerPrice]='offerObject[i].cena'
+                [offerPrice]='splitPrice(offerObject[i].cena)'
             >
             </app-offer>
         </div>

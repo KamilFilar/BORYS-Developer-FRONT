@@ -65,7 +65,15 @@
             <app-button 
             [name]='sendBtnText'
             (click)='sendMsg()'
+            data-bs-toggle="modal" 
+            data-bs-target="#alertModal"
             ></app-button>
         </div>
     </div>
 </div>
+
+<app-alert
+    [tittle]='modalTittle'
+    [msg]='modalMsg'
+>
+</app-alert>

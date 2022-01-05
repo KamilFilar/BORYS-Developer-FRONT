@@ -20,7 +20,8 @@ export class OfferComponent implements OnInit {
   constructor() { }
 
   calcPriceArea() {
-    return (parseFloat(this.offerPrice)/parseFloat(this.offerArea)).toFixed(2);
+    let price = this.offerPrice.replace(/\s/g, '');
+    return (parseFloat(price)/parseFloat(this.offerArea)).toFixed(2);
   }
   
   isPlot() {

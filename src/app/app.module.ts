@@ -39,6 +39,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TittleComponent } from './modules/components/tittle/tittle.component';
 import { NoOffersComponent } from './modules/components/no-offers/no-offers.component';
 import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
+import { AlertComponent } from './modules/modals/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { SearchOfferResultComponent } from './modules/views/offertype/search-off
     TittleComponent,
     NoOffersComponent,
     SearchOfferResultComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,
