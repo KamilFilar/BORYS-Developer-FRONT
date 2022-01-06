@@ -3,6 +3,10 @@
     min-height: 75vh;
     animation: fadein 2s;
 
+    &--btn {
+        padding: 25px 0;
+    }
+
     &--tittle {
         padding-top: 200px;
         transition-duration: 0.5s;

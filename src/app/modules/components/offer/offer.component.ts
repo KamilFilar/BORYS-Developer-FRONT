@@ -37,7 +37,8 @@ export class OfferComponent implements OnInit {
   }
 
   calcPriceArea() {
-    let price = this.offerPrice;
+    
+    let price = this.offerPrice.replace(/\s/g, '');
     return (parseFloat(price)/parseFloat(this.offerArea)).toFixed(2);
   }
   
