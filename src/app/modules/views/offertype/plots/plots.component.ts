@@ -23,7 +23,6 @@ export class PlotsComponent implements OnInit {
       (res) => {
         this.offerObject = res;
         this.offerObjectLength = this.offerObject.length;
-        console.log(this.offerObject[0].images[0].image_path)
       }
     );
   }

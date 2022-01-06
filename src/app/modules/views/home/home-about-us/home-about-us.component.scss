@@ -8,7 +8,15 @@
 
         &--special {
             font-weight: 500;
-            color: rgb(0, 80, 170);
+            color: rgb(0, 70, 150);
+            text-decoration: none;
+            transition-duration: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                color: rgb(0, 80, 170);
+                transition-duration: 0.3s;
+            }
         }
     }
 

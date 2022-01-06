@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit {
   ) { }
 
   scrollToTop() {
-    if (this.router.url == '/' || this.router.url == '/#Promowane' || this.router.url == '/#Kontakt') {
+    if (this.router.url == '/' || this.router.url == "/#Kontakt") {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     else {
@@ -41,13 +41,20 @@ export class NavbarComponent implements OnInit {
   }
 
   scrollToContact() {
-    let yOffset = 200;
-    const el = document.getElementById('Kontakt');
-    const target = el!.getBoundingClientRect().top + window.pageYOffset - yOffset;
-    window.scrollTo({ top: target, behavior: 'smooth' });
+    if(this.router.url == '/' || this.router.url == "/#Kontakt") {
+      let yOffset = 200;
+      const el = document.getElementById('Kontakt');
+      const target = el!.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      window.scrollTo({ top: target, behavior: 'smooth' });
+    }
+    else {
+      window.location.href = "#Kontakt";
+    }
   }
 
   ngOnInit(): void {
+
   }
+
 
 }
