@@ -39,6 +39,10 @@ export class PlotsComponent implements OnInit {
     return false;
   }
 
+  splitPrice(price: any) {
+    return price.toLocaleString();
+  }
+
   ngOnInit(): void {
     this.getPlots();
     this.isOfferExist();

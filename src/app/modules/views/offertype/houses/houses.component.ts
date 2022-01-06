@@ -38,6 +38,10 @@ export class HousesComponent implements OnInit {
     return false;
   }
 
+  splitPrice(price: any) {
+    return price.toLocaleString();
+  }
+
   ngOnInit(): void {
     this.getHouses();
     this.isOfferExist();

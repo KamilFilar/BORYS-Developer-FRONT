@@ -39,6 +39,10 @@ export class ApartmentsComponent implements OnInit {
     return false;
   }
 
+  splitPrice(price: any) {
+    return price.toLocaleString();
+  }
+
   ngOnInit(): void {
     this.getApartments();
     this.isOfferExist();

@@ -40,6 +40,10 @@ export class PremisesComponent implements OnInit {
     return false;
   }
 
+  splitPrice(price: any) {
+    return price.toLocaleString();
+  }
+
   ngOnInit(): void {
     this.getPremises();
     this.isOfferExist();

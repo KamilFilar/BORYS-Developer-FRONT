@@ -37,9 +37,7 @@ export class OfferCarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getOfferImages();
-
-    
+    this.getOfferImages(); 
   }
 
 }
