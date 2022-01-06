@@ -13,7 +13,6 @@ export class HousesComponent implements OnInit {
   tittleText = 'Domy';
   offerObject: any;
   offerObjectLength: any;
-  returBtn = 'Powrót';
 
   constructor(
     private offerService: OfferService,

@@ -13,7 +13,6 @@ export class ApartmentsComponent implements OnInit {
   tittleText = 'Mieszkania';
   offerObject: any;
   offerObjectLength: any;
-  returBtn = 'Powrót';
 
   constructor(
     private offerService: OfferService,
