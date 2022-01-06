@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-offer',
@@ -7,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OfferComponent implements OnInit {
 
+  @Input() offerID = '';
   @Input() offerImagePath = '';
   @Input() offerTitle = '';
   @Input() offerCategory = '';
@@ -17,7 +19,22 @@ export class OfferComponent implements OnInit {
   @Input() offerRooms = '';
   @Input() offerPrice = '';
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
+
+  goToDetails(category: any) {
+    if(category == 'lokal')
+      this.router.navigate(['Lokale/', this.offerID]);
+    if(category == 'dom')
+      this.router.navigate(['Domy/', this.offerID]);
+    if(category == 'mieszkanie')
+      this.router.navigate(['Mieszkania/', this.offerID]);
+    if(category == 'działka')
+      this.router.navigate(['Działki/', this.offerID]);
+    
+    return;
+  }
 
   calcPriceArea() {
     let price = this.offerPrice.replace(/\s/g, '');

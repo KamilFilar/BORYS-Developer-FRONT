@@ -6,7 +6,8 @@
     </div>
     <div *ngIf='isOfferExist()'>
         <div *ngFor='let offer of counter(); let i = index'>
-            <app-offer 
+            <app-offer
+                [offerID]='offerObject[i].ogloszenieId'  
                 [offerImagePath]='offerObject[i].images[0].image_path' 
                 [offerTitle]='offerObject[i].tytul'
                 [offerCategory]='offerObject[i].rodzaj' 
