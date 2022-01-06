@@ -41,6 +41,7 @@ import { NoOffersComponent } from './modules/components/no-offers/no-offers.comp
 import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
 import { AlertComponent } from './modules/modals/alert/alert.component';
 import { OfferDetailsComponent } from './modules/views/offertype/offer-details/offer-details.component';
+import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-details/offer-details-label/offer-details-label.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { OfferDetailsComponent } from './modules/views/offertype/offer-details/o
     SearchOfferResultComponent,
     AlertComponent,
     OfferDetailsComponent,
+    OfferDetailsLabelComponent,
   ],
   imports: [
     BrowserModule,

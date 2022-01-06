@@ -1,1 +1,100 @@
-<p>offer-details works!</p>
+<div class="containter">
+    <div class="row justify-content-center">
+        <div class="col-11 offerDetails">
+            <div class="row">
+                <div class="col-12 offerDetails--nav">
+                    <p class="offerDetails__title">
+                        {{ singleOffer.tytul }}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-11">
+                    Carusel
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <p class="offerDetails__subtitle">
+                        Szczegółowe informacje:
+                    </p>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
+                    <app-offer-details-label
+                        [icon]='category.icon'
+                        [name]='category.name'
+                        [value]='singleOffer.rodzaj'
+                    >
+                    </app-offer-details-label>
+                    <app-offer-details-label
+                        [icon]='type.icon'
+                        [name]='type.name'
+                        [value]='singleOffer.typ'
+                    >
+                    </app-offer-details-label>
+                    <app-offer-details-label
+                        [icon]='area.icon'
+                        [name]='area.name'
+                        [value]='singleOffer.powierzchnia'
+                    >
+                    </app-offer-details-label>
+                    <app-offer-details-label
+                        [icon]='rooms.icon'
+                        [name]='rooms.name'
+                        [value]='singleOffer.liczba_pokoi'
+                    >
+                    </app-offer-details-label>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
+                    <app-offer-details-label
+                        [icon]='city.icon'
+                        [name]='city.name'
+                        [value]='singleOffer.miasto'
+                    >
+                    </app-offer-details-label>
+                    <app-offer-details-label
+                        [icon]='street.icon'
+                        [name]='street.name'
+                        [value]='singleOffer.ulica'
+                    >
+                    </app-offer-details-label>
+                    <app-offer-details-label
+                        [icon]='commune.icon'
+                        [name]='commune.name'
+                        [value]='singleOffer.gmina'
+                    >
+                    </app-offer-details-label>
+                    <app-offer-details-label
+                        [icon]='voivodeship.icon'
+                        [name]='voivodeship.name'
+                        [value]='singleOffer.wojewodztwo'
+                    >
+                    </app-offer-details-label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="offerDetails__text--about">
+                        {{singleOffer.opis }}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 offerDetails--footer">
+                    <p class="offerDetails__text">
+                        Data dodania:
+                        <span class="offerDetails__text--color"> 
+                            {{ formatDate(singleOffer.createdAt) }}
+                        </span>
+                    </p>
+                    <p class="offerDetails__text">
+                        Data ostatniej aktualizacji:
+                        <span class="offerDetails__text--color"> 
+                            {{ formatDate(singleOffer.updatedAt) }}
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

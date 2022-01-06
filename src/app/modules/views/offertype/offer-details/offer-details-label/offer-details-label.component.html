@@ -1,0 +1,12 @@
+<div class="row justify-content-center offerLabel">
+    <div class="col-2 text-end">
+        <fa-icon [icon]='icon' class="fa-2x offerLabel--icon"></fa-icon>
+    </div>
+    <div class="col-10 offerLabel__flex">
+        <span class="offerLabel__flex--text">{{ name }}: </span>
+        <span class="offerLabel__flex--value"> {{ value }} </span>
+        <span *ngIf="isArea(name)" class="offerLabel__flex--unit">
+            m<sup>2</sup>
+        </span>
+    </div>
+</div>
