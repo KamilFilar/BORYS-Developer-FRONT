@@ -32,8 +32,14 @@ export class OfferCarouselComponent implements OnInit {
     return new Array(i);
   }
 
+  getIMGFullScreen(image: any) {
+    location.href = image;
+  }
+
   ngOnInit(): void {
     this.getOfferImages();
+
+    
   }
 
 }

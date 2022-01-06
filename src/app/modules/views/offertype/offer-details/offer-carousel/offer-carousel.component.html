@@ -1,10 +1,18 @@
 <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner" >
         <div class="carousel-item active">
-            <img [src]="offerIMGObj.images[0].image_path" class="carousel-item--img">
+            <img 
+                [src]="offerIMGObj.images[0].image_path" 
+                class="carousel-item--img" 
+                (click)="getIMGFullScreen(offerIMGObj.images[0].image_path)"
+            />
         </div>
         <div class="carousel-item" *ngFor='let in of counter(lengthOfImages-1); let i = index'>
-            <img [src]="offerIMGObj.images[i+1].image_path" class="carousel-item--img">
+            <img 
+                [src]="offerIMGObj.images[i+1].image_path" 
+                class="carousel-item--img" 
+                (click)="getIMGFullScreen(offerIMGObj.images[i+1].image_path)"
+            />
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
