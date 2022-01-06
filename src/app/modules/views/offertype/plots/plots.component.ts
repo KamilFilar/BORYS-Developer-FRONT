@@ -13,6 +13,7 @@ export class PlotsComponent implements OnInit {
   tittleText = 'Działki';
   offerObject: any;
   offerObjectLength: any;
+  returnBtn = 'Powrót';
 
   constructor(
     private offerService: OfferService,

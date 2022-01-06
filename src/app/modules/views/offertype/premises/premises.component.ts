@@ -14,6 +14,7 @@ export class PremisesComponent implements OnInit {
   tittleText = 'Lokale';
   offerObject: any;
   offerObjectLength: any;
+  returnBtn = 'Powrót';
 
   constructor(
     private offerService: OfferService,

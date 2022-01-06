@@ -15,6 +15,7 @@ export class SearchOfferResultComponent implements OnInit {
   areaMin: any;
   areaMax: any;
   areaOk!: boolean;
+  returnBtn = 'Powrót';
 
   constructor(
     private route: ActivatedRoute,
