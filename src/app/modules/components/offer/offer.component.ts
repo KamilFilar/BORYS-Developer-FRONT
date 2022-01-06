@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-offer',
@@ -37,7 +37,7 @@ export class OfferComponent implements OnInit {
   }
 
   calcPriceArea() {
-    let price = this.offerPrice.replace(/\s/g, '');
+    let price = this.offerPrice;
     return (parseFloat(price)/parseFloat(this.offerArea)).toFixed(2);
   }
   

@@ -18,7 +18,6 @@ import { faStoreAlt } from '@fortawesome/free-solid-svg-icons';
 
 export class OfferDetailsComponent implements OnInit {
 
-  offerDetailsObj: any;
   singleOffer: any;
 
   category = {
@@ -60,21 +59,31 @@ export class OfferDetailsComponent implements OnInit {
   ) { }
 
   getOfferDetails() {
-    let offerID = this.route.snapshot.paramMap.get('id');
+    let offerID = this.route.snapshot.paramMap.get('id')!;
 
-    this.offerService.getAllOffers().then(
+    this.offerService.getSingleOffer(offerID).then(
       (res) => {
-        this.offerDetailsObj = res;
-
-        for (let i = 0; i < this.offerDetailsObj.length; i++) {
-
-          if (this.offerDetailsObj[i].ogloszenieId == offerID) {
-            this.singleOffer = this.offerDetailsObj[i];
-            break;
-          }
-        }
+        this.singleOffer = res;
       }
     )
+  }
+
+  setRooms() {
+    if(this.singleOffer.rodzaj == 'działka')
+      return '-----';
+
+    return this.singleOffer.liczba_pokoi;
+  }
+
+  setPriceUnit() {
+    if(this.singleOffer.typ=='wynajem')
+      return 'PLN/miesiąc';
+    
+    return 'PLN';
+  }
+
+  splitPrice(price: any) {
+    return price.toLocaleString();
   }
 
   formatDate(date: Date) {

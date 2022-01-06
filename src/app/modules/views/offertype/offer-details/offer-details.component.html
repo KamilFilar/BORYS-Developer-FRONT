@@ -8,12 +8,17 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-10 col-11">
-                    Carusel
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-11">
+                    <app-offer-carousel></app-offer-carousel>
                 </div>
             </div>
             <div class="row justify-content-center">
+                <div class="col-12">
+                    <p class="offerDetails__subtitle">
+                        Cena: {{ splitPrice(singleOffer.cena) }} {{ setPriceUnit() }}
+                    </p>
+                </div>
                 <div class="col-12">
                     <p class="offerDetails__subtitle">
                         Szczegółowe informacje:
@@ -41,7 +46,7 @@
                     <app-offer-details-label
                         [icon]='rooms.icon'
                         [name]='rooms.name'
-                        [value]='singleOffer.liczba_pokoi'
+                        [value]='setRooms()'
                     >
                     </app-offer-details-label>
                 </div>
@@ -98,3 +103,4 @@
         </div>
     </div>
 </div>
+<app-footer></app-footer>

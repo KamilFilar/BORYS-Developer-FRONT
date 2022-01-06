@@ -31,4 +31,8 @@ export class OfferService {
     return this.https.get(this.baseURL + '/all?tytul='+name+'&typ='+category+'&rodzaj='+type+'&miasto='+location).toPromise();
   }
 
+  getSingleOffer(id: string) 
+  {
+    return this.https.get(this.baseURL + '/single?id='+id).toPromise();
+  }
 }
