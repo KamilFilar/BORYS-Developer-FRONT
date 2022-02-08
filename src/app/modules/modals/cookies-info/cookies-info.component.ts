@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,19 +9,22 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 })
 export class CookiesInfoComponent implements OnInit {
 
-  faTimesCircle = faTimesCircle; 
+  faTimesCircle = faTimesCircle;
   unaccept = 'https://www.google.pl/';
+  btnName = "Akceptuj";
 
   constructor(
     private cookieService: CookieService
-  ) {}
-  
+  ) { }
+
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    $(window).on('load', function () {
+      ($('#cookiesModal') as any).modal('show');
+    });
   }
 
-  isAcceptCookies() {
-    this.cookieService.set('acceptedCookies', 'yes');
+  acceptCookies() {
+    this.cookieService.set('acceptedCookies', 'yes', 2147483647);
   }
 
 }

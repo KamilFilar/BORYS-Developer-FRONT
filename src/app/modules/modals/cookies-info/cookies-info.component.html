@@ -1,0 +1,39 @@
+<div
+  class="modal fade"
+  id="cookiesModal"
+  tabindex="-1"
+  aria-labelledby="cookiesModal"
+  aria-hidden="true"
+  data-bs-keyboard="false" data-bs-backdrop="static"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <p>
+                        Kolejna inforamcja o cookies na którą nawet nie zwrócisz uwagi, ale musze Cię o tym poinformować.
+                        Korzystając ze strony wyrażasz zgodę na ich używanie, w przeciwnym wypadku googluj dalej!
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-end footer">
+                <div class="col-lg-1 col-sm-2 col-2 text-center">
+                    <a [href]="unaccept" class="href">Odrzuć</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-4 text-center">
+                    <app-button
+                        [name]="btnName"
+                        (click)="acceptCookies()"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    >
+                    </app-button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

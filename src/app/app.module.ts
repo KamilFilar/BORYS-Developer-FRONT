@@ -43,6 +43,8 @@ import { AlertComponent } from './modules/modals/alert/alert.component';
 import { OfferDetailsComponent } from './modules/views/offertype/offer-details/offer-details.component';
 import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-details/offer-details-label/offer-details-label.component';
 import { OfferCarouselComponent } from './modules/views/offertype/offer-details/offer-carousel/offer-carousel.component';
+import * as $ from 'jquery';
+
 
 @NgModule({
   declarations: [
