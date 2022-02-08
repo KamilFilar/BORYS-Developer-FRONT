@@ -16,7 +16,6 @@ import { OfferComponent } from './modules/components/offer/offer.component';
 import { ButtonComponent } from './modules/components/button/button.component';
 // Import views
 import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-found.component';
-import { CookiesInfoComponent } from './modules/views/cookies-info/cookies-info.component';
 import { PremisesComponent } from './modules/views/offertype/premises/premises.component';
 import { HousesComponent } from './modules/views/offertype/houses/houses.component';
 import { ApartmentsComponent } from './modules/views/offertype/apartments/apartments.component';
@@ -35,6 +34,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
+import { CookiesInfoComponent } from './modules/modals/cookies-info/cookies-info.component';
 
 import { TittleComponent } from './modules/components/tittle/tittle.component';
 import { NoOffersComponent } from './modules/components/no-offers/no-offers.component';
@@ -49,7 +49,6 @@ import { OfferCarouselComponent } from './modules/views/offertype/offer-details/
     AppComponent,
     // Views
     PageNotFoundComponent,
-    CookiesInfoComponent,
     PremisesComponent,
     HousesComponent,
     ApartmentsComponent,
@@ -61,6 +60,9 @@ import { OfferCarouselComponent } from './modules/views/offertype/offer-details/
     HomeOfferComponent,
     HomeAboutUsComponent,
     HomeContactComponent,
+    // Modals
+    CookiesInfoComponent,
+    AlertComponent,
     // Components
     NavbarComponent,
     NavbarItemComponent,
@@ -71,7 +73,6 @@ import { OfferCarouselComponent } from './modules/views/offertype/offer-details/
     TittleComponent,
     NoOffersComponent,
     SearchOfferResultComponent,
-    AlertComponent,
     OfferDetailsComponent,
     OfferDetailsLabelComponent,
     OfferCarouselComponent,

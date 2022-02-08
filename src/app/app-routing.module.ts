@@ -8,7 +8,6 @@ import { ApartmentsComponent } from './modules/views/offertype/apartments/apartm
 import { HousesComponent } from './modules/views/offertype/houses/houses.component';
 import { PlotsComponent } from './modules/views/offertype/plots/plots.component';
 import { PremisesComponent } from './modules/views/offertype/premises/premises.component';
-import { CookiesInfoComponent } from './modules/views/cookies-info/cookies-info.component';
 import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
 import { OfferDetailsComponent } from './modules/views/offertype/offer-details/offer-details.component';
 
@@ -23,7 +22,6 @@ const routes: Routes = [
   { path: 'Lokale', component: PremisesComponent },
   { path: 'Lokale/:id', component: OfferDetailsComponent, pathMatch: 'full' }, // Don't work as children
   { path: 'Wyszukane', component: SearchOfferResultComponent },
-  { path: 'Cookies', component: CookiesInfoComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '/404' }
 ];
