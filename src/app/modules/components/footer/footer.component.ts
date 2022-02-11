@@ -18,7 +18,7 @@ export class FooterComponent implements OnInit {
   faMailBulk = faMailBulk;
   faMapMarkedAlt = faMapMarkedAlt;
   faCalendarCheck = faCalendarCheck;
-  logoIMG = './../../../../assets/images/footer/logo.png';
+  logoIMG = './../../../../assets/images/footer/logo.webp';
 
   actualYear: number = new Date().getFullYear();
 

@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   faBars = faBars;
-  logoPath = './../../../../assets/images/navbar/logo.png';
+  logoPath = './../../../../assets/images/navbar/logo.webp';
   values = {
     plot: 'Działki',
     premises: 'Lokale',
@@ -20,11 +20,11 @@ export class NavbarComponent implements OnInit {
     contact: 'Kontakt'
   }
   photos = {
-    plot: '../../../../assets/images/navbar/plots.jpg',
-    premises: '../../../../assets/images/navbar/premises.jpg',
-    flats: '../../../../assets/images/navbar/flats.jpg',
-    houses: '../../../../assets/images/navbar/houses.jpg',
-    contact: '../../../../assets/images/navbar/contact.jpg',
+    plot: '../../../../assets/images/navbar/plots.webp',
+    premises: '../../../../assets/images/navbar/premises.webp',
+    flats: '../../../../assets/images/navbar/flats.webp',
+    houses: '../../../../assets/images/navbar/houses.webp',
+    contact: '../../../../assets/images/navbar/contact.webp',
   }
 
   constructor(

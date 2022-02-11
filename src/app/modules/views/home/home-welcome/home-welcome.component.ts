@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class HomeWelcomeComponent implements OnInit {
 
-  imgWelcomePath = './../../../../../assets/images/home/welcome.jpg';
+  imgWelcomePath = './../../../../../assets/images/home/welcome.webp';
   btnName = 'Zobacz ofertę'
 
   constructor() { }

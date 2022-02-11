@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeAboutUsComponent implements OnInit {
 
   aboutUsText = 'O nas';
-  wesolaIMG = './../../../../../assets/images/home/wesola.png';
-  skowronkowIMG = './../../../../../assets/images/home/skowronkow.png';
+  wesolaIMG = './../../../../../assets/images/home/wesola.webp';
+  skowronkowIMG = './../../../../../assets/images/home/skowronkow.webp';
 
   constructor() { }
 
