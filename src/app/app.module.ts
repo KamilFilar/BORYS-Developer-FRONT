@@ -44,6 +44,7 @@ import { OfferDetailsComponent } from './modules/views/offertype/offer-details/o
 import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-details/offer-details-label/offer-details-label.component';
 import { OfferCarouselComponent } from './modules/views/offertype/offer-details/offer-carousel/offer-carousel.component';
 import * as $ from 'jquery';
+import { HomeAnnouncementsComponent } from './modules/views/home/home-announcements/home-announcements.component';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import * as $ from 'jquery';
     OfferDetailsComponent,
     OfferDetailsLabelComponent,
     OfferCarouselComponent,
+    HomeAnnouncementsComponent,
   ],
   imports: [
     BrowserModule,

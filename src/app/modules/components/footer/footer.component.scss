@@ -10,7 +10,6 @@
     &__logo {
         padding: 0;
         position: relative;
-        min-height: 60px;
 
         & img {
             position: absolute;
@@ -24,7 +23,7 @@
     }
 
     &__text {
-        font-family: "PlayfairDisplay", serif;
+        font-family: PlayfairDisplay;
         font-size: 1.2rem;
         font-weight: 600;
         color: rgb(0, 50, 100);

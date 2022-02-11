@@ -1,7 +1,7 @@
 <nav class="navbar-expand-xl fixed-top">
   <div class="navbar container-fluid">
     <div class="navbar-brand" (click)="scrollToTop()">
-      <img [src]="logoPath" />
+      <img [src]="logoPath" width="100%" height="auto"/>
     </div>
     <button 
       class="navbar-toggler navbar__btn"  
@@ -17,11 +17,6 @@
     <div class="collapse navbar-collapse justify-content-end navbar__items">
       <ul class="navbar-nav">
         <app-navbar-item 
-          [value]="values.premises" 
-          [navItemPhoto]="photos.premises" 
-          routerLink="Lokale">
-        </app-navbar-item>
-        <app-navbar-item 
           [value]="values.plot" 
           [navItemPhoto]="photos.plot" 
           routerLink="Działki">
@@ -30,6 +25,11 @@
           [value]="values.houses" 
           [navItemPhoto]="photos.houses" 
           routerLink="Domy">
+        </app-navbar-item>
+        <app-navbar-item 
+          [value]="values.premises" 
+          [navItemPhoto]="photos.premises" 
+          routerLink="Lokale">
         </app-navbar-item>
         <app-navbar-item 
           [value]="values.flats" 

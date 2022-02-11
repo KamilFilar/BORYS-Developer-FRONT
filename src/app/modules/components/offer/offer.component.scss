@@ -27,15 +27,13 @@ a {
         margin: auto 0;
 
         &__img {
-            width: 100%;
-            height: auto;
             min-height: 180px;
         }
     }
 
     &__details {
         color: rgb(0, 50, 100);
-        font-family: Calibri, sans-serif;
+        font-family: PlayfairDisplay;
 
         &--name {
             margin: 10px 0 3px;

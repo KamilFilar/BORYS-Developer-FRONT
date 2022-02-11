@@ -11,7 +11,7 @@
 }
 
 .pnf {
-    font-family: "PlayfairDisplay", serif;
+    font-family: PlayfairDisplay;
     cursor: default;
 
     &__error {
@@ -24,10 +24,5 @@
         font-size: 25px;
         font-weight: 600;
         color: rgb(0,50,100);
-    }
-
-    &__icon {
-        width: 40px;
-        height: auto;
     }
 }
