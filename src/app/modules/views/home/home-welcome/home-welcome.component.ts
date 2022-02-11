@@ -15,7 +15,7 @@ export class HomeWelcomeComponent implements OnInit {
 
   scrollToContent() {
     let yOffset = 200;
-    const el = document.getElementById('Promowane');
+    const el = document.getElementById('Info');
     const target = el!.getBoundingClientRect().top + window.pageYOffset - yOffset;
     window.scrollTo({ top: target, behavior: 'smooth' });
   }
