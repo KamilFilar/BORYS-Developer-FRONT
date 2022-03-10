@@ -1,27 +1,27 @@
 .aboutUs {
-    margin-top: 70px;
+  margin-top: 70px;
 
-    &__text {
-        padding: 5px 10px 0;
-        text-indent: 10px;
-        font-size: 1rem;
+  &__text {
+    padding: 5px 10px 0;
+    text-indent: 10px;
+    font-size: 1rem;
 
-        &--special {
-            font-weight: 500;
-            color: rgb(0, 70, 150);
-            text-decoration: none;
-            transition-duration: 0.3s;
+    &--special {
+      font-weight: 500;
+      color: rgb(0, 70, 150);
+      text-decoration: none;
+      transition-duration: 0.3s;
 
-            &:hover {
-                cursor: pointer;
-                color: rgb(0, 150, 236);
-                transition-duration: 0.3s;
-            }
-        }
+      &:hover {
+        cursor: pointer;
+        color: rgb(0, 150, 236);
+        transition-duration: 0.3s;
+      }
     }
+  }
 
-    &__imgBox {
-        margin: auto 10px;
-        text-align: center;
-    }
+  &__imgBox {
+    margin: auto 10px;
+    text-align: center;
+  }
 }

@@ -1,13 +1,12 @@
 <div class="container-fluid">
-    <div class="row justify-content-center homeWelcome">
-        <div class="col-xl-4 col-lg-5 col-md-12 homeWelcome__start">
-            <p class="homeWelcome__start__text">
-                Spełniamy Twoje marzenia
-            </p>
-            <app-hero-button [name]='btnName' (click)="scrollToContent()"></app-hero-button>
-        </div> 
-        <div class="col-xl-8 col-lg-7 col-md-12 homeWelcome__image"></div>
+  <div class="row justify-content-center homeWelcome">
+    <div class="col-xl-4 col-lg-5 col-md-12 homeWelcome__start">
+      <p class="homeWelcome__start__text">Spełniamy Twoje marzenia</p>
+      <app-hero-button
+        [name]="btnName"
+        (click)="scrollToContent()"
+      ></app-hero-button>
     </div>
+    <div class="col-xl-8 col-lg-7 col-md-12 homeWelcome__image"></div>
+  </div>
 </div>
-
-

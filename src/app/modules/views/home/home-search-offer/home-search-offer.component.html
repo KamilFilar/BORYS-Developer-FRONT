@@ -1,67 +1,69 @@
 <div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-sm-11 col-11 searchOffer">
-            <app-tittle [name]='searchOffer'></app-tittle> 
-            <div class="row justify-content-center searchOffer--border">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 col-md-11 col-12 searchOffer__formWrapper">
-                            <mat-form-field appearance="fill">
-                              <mat-label>Nazwa nieruchomości</mat-label>
-                              <input matInput placeholder="Podaj nazwę nieruchomości">
-                            </mat-form-field>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-2 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
-                        <mat-form-field appearance="fill">
-                            <mat-label>Rodzaj oferty</mat-label>
-                            <mat-select (selectionChange)="changeCategoryOffer($event.value)">
-                              <mat-option *ngFor="let type of arrayType" [value]="type.value">
-                                {{type.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
-                        <mat-form-field appearance="fill">
-                            <mat-label>Typ nieruchomości</mat-label>
-                            <mat-select (selectionChange)="changeTypeOffer($event.value)">
-                              <mat-option *ngFor="let offer of arrayOffer" [value]="offer.value">
-                                {{offer.viewValue}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
-                        <mat-form-field class="example-full-width" appearance="fill">
-                            <mat-label>Lokalizacja</mat-label>
-                            <input matInput placeholder="Nazwa miejscowości, adres itp.">
-                          </mat-form-field>
-                    </div>
-                    <div class="col-xl-3 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
-                        <div class="row">
-                            <div class="col-6">
-                                <mat-form-field class="example-full-width" appearance="fill">
-                                    <mat-label>Min</mat-label>
-                                    <input matInput placeholder="od">
-                                    <span matSuffix>m<sup>2</sup></span>
-                                  </mat-form-field>
-                            </div>
-                            <div class="col-6">
-                                <mat-form-field class="example-full-width" appearance="fill">
-                                    <mat-label>Max</mat-label>
-                                    <input matInput placeholder="do">
-                                    <span matSuffix>m<sup>2</sup></span>
-                                  </mat-form-field>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-12 searchOffer__btn">
-                    <app-button [name]='searchText' (click)='sendData()'></app-button>    
-                </div>
-            </div>
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-sm-11 col-11 searchOffer">
+      <app-tittle [name]="searchOffer"></app-tittle>
+      <div class="row justify-content-center searchOffer--border">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 col-md-11 col-12 searchOffer__formWrapper">
+            <mat-form-field appearance="fill">
+              <mat-label>Nazwa nieruchomości</mat-label>
+              <input matInput placeholder="Podaj nazwę nieruchomości" />
+            </mat-form-field>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-2 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
+            <mat-form-field appearance="fill">
+              <mat-label>Rodzaj oferty</mat-label>
+              <mat-select (selectionChange)="changeCategoryOffer($event.value)">
+                <mat-option *ngFor="let type of arrayType" [value]="type.value">
+                  {{ type.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
+            <mat-form-field appearance="fill">
+              <mat-label>Typ nieruchomości</mat-label>
+              <mat-select (selectionChange)="changeTypeOffer($event.value)">
+                <mat-option
+                  *ngFor="let offer of arrayOffer"
+                  [value]="offer.value"
+                >
+                  {{ offer.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Lokalizacja</mat-label>
+              <input matInput placeholder="Nazwa miejscowości, adres itp." />
+            </mat-form-field>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-11 col-12 searchOffer__formWrapper">
+            <div class="row">
+              <div class="col-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Min</mat-label>
+                  <input matInput placeholder="od" />
+                  <span matSuffix>m<sup>2</sup></span>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Max</mat-label>
+                  <input matInput placeholder="do" />
+                  <span matSuffix>m<sup>2</sup></span>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 searchOffer__btn">
+          <app-button [name]="searchText" (click)="sendData()"></app-button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

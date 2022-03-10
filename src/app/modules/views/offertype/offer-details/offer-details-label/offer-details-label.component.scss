@@ -1,36 +1,36 @@
 .offerLabel {
-    margin: 10px;
-    padding: 5px 0;
-    border-top: 0.01em solid rgba(112, 128, 144, 0.2);
-    border-bottom: 0.01em solid rgba(112, 128, 144, 0.2);
+  margin: 10px;
+  padding: 5px 0;
+  border-top: 0.01em solid rgba(112, 128, 144, 0.2);
+  border-bottom: 0.01em solid rgba(112, 128, 144, 0.2);
 
-    &--icon {
-        color: rgb(0, 80, 170);
+  &--icon {
+    color: rgb(0, 80, 170);
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+
+    &--text,
+    &--value,
+    &--unit {
+      font-size: 1rem;
+      font-weight: 550;
     }
 
-    &__flex {
-        display: flex;
-        align-items: center;
-
-        &--text,
-        &--value,
-        &--unit {
-            font-size: 1rem;
-            font-weight: 550;
-        }
-
-        &--text {
-            margin-left: -10px;
-        }
-
-        &--value {
-            margin-left: 4px;
-            color: rgb(0, 65, 150);
-        }
-
-        &--unit {
-            margin-left: 2px;
-            color: rgb(0, 65, 150);
-        }
+    &--text {
+      margin-left: -10px;
     }
+
+    &--value {
+      margin-left: 4px;
+      color: rgb(0, 65, 150);
+    }
+
+    &--unit {
+      margin-left: 2px;
+      color: rgb(0, 65, 150);
+    }
+  }
 }

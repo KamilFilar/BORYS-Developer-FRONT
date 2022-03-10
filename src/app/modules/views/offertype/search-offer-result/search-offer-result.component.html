@@ -1,31 +1,36 @@
 <div class="containter-fluid offers">
-    <div class="offers--tittle">
-        <app-tittle [name]='tittleText'></app-tittle>
+  <div class="offers--tittle">
+    <app-tittle [name]="tittleText"></app-tittle>
+  </div>
+  <div *ngIf="isOfferExist(); else noOfferComponent">
+    <div *ngFor="let offer of counter(); let i = index">
+      <div
+        *ngIf="
+          isCorrectArea(offerObject[i].powierzchnia);
+          else noOfferComponent
+        "
+      >
+        <app-offer
+          [offerID]="offerObject[i].ogloszenieId"
+          [offerImagePath]="offerObject[i].images[0].image_path"
+          [offerTitle]="offerObject[i].tytul"
+          [offerCategory]="offerObject[i].rodzaj"
+          [offerType]="offerObject[i].typ"
+          [offerCity]="offerObject[i].miasto"
+          [offerStreet]="offerObject[i].ulica"
+          [offerArea]="offerObject[i].powierzchnia"
+          [offerRooms]="offerObject[i].liczba_pokoi"
+          [offerPrice]="offerObject[i].cena"
+        >
+        </app-offer>
+      </div>
     </div>
-    <div *ngIf='isOfferExist(); else noOfferComponent'>
-        <div *ngFor='let offer of counter(); let i = index'>
-            <div *ngIf='isCorrectArea(offerObject[i].powierzchnia); else noOfferComponent'>
-                <app-offer
-                    [offerID]='offerObject[i].ogloszenieId'  
-                    [offerImagePath]='offerObject[i].images[0].image_path' 
-                    [offerTitle]='offerObject[i].tytul'
-                    [offerCategory]='offerObject[i].rodzaj' 
-                    [offerType]='offerObject[i].typ'
-                    [offerCity]='offerObject[i].miasto' 
-                    [offerStreet]='offerObject[i].ulica'
-                    [offerArea]='offerObject[i].powierzchnia' 
-                    [offerRooms]='offerObject[i].liczba_pokoi'
-                    [offerPrice]='offerObject[i].cena'
-                >
-                </app-offer>
-            </div>
-        </div>
-    </div>
-    <ng-template #noOfferComponent>
-        <app-no-offers></app-no-offers>
-    </ng-template>
-    <div class="text-center offers--btn">
-        <app-button [name]="returnBtn" routerLink=""></app-button>
-    </div>
+  </div>
+  <ng-template #noOfferComponent>
+    <app-no-offers></app-no-offers>
+  </ng-template>
+  <div class="text-center offers--btn">
+    <app-button [name]="returnBtn" routerLink=""></app-button>
+  </div>
 </div>
 <app-footer></app-footer>

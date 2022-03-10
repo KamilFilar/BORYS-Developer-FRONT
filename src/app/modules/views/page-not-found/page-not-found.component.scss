@@ -1,29 +1,29 @@
 .vertical-center {
-    min-height: 100%;
-    min-height: 100vh;
-    display: flex;
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
 }
 
 .row {
-    width: 100%;
-    margin: auto;
-    text-align: center;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .pnf {
-    font-family: "Inter", serif;
-    font-display: swap;
-    cursor: default;
+  font-family: "Inter", serif;
+  font-display: swap;
+  cursor: default;
 
-    &__error {
-        color: rgb(0, 60, 120);
-        font-size: 230px;
-        margin-bottom: 130px;
-    }
+  &__error {
+    color: rgb(0, 60, 120);
+    font-size: 230px;
+    margin-bottom: 130px;
+  }
 
-    &__text {
-        font-size: 25px;
-        font-weight: 600;
-        color: rgb(0,50,100);
-    }
+  &__text {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 50, 100);
+  }
 }

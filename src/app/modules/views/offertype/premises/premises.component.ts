@@ -4,29 +4,22 @@ import { OfferService } from 'src/app/config/services/offer.service';
 @Component({
   selector: 'app-premises',
   templateUrl: './premises.component.html',
-  styleUrls: [
-    './../../../../../assets/styles/offers.scss'  
-  ]
+  styleUrls: ['./../../../../../assets/styles/offers.scss'],
 })
 
 export class PremisesComponent implements OnInit {
-
   tittleText = 'Lokale';
   offerObject: any;
   offerObjectLength: any;
   returnBtn = 'Powrót';
 
-  constructor(
-    private offerService: OfferService,
-  ) { }
+  constructor(private offerService: OfferService) {}
 
   getPremises() {
-    this.offerService.getTypeOffers('lokal')?.then(
-      (res) => {
-        this.offerObject = res;
-        this.offerObjectLength = this.offerObject.length;
-      }
-    );
+    this.offerService.getTypeOffers('lokal')?.then((res) => {
+      this.offerObject = res;
+      this.offerObjectLength = this.offerObject.length;
+    });
   }
 
   counter() {
@@ -34,8 +27,7 @@ export class PremisesComponent implements OnInit {
   }
 
   isOfferExist() {
-    if (this.offerObjectLength != 0)
-      return true
+    if (this.offerObjectLength != 0) return true;
 
     return false;
   }
@@ -48,5 +40,4 @@ export class PremisesComponent implements OnInit {
     this.getPremises();
     this.isOfferExist();
   }
-
 }

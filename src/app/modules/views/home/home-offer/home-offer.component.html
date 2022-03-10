@@ -1,25 +1,24 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12 promoted">
-            <app-tittle [name]='promotedText'></app-tittle>
-        </div>
+  <div class="row">
+    <div class="col-12 promoted">
+      <app-tittle [name]="promotedText"></app-tittle>
     </div>
-    <div *ngIf='isOfferExist()'>
-        <div *ngFor='let offer of counter(); let i = index'>
-            <app-offer
-                [offerID]='offerObject[i].ogloszenieId'  
-                [offerImagePath]='offerObject[i].images[0].image_path' 
-                [offerTitle]='offerObject[i].tytul'
-                [offerCategory]='offerObject[i].rodzaj' 
-                [offerType]='offerObject[i].typ'
-                [offerCity]='offerObject[i].miasto' 
-                [offerStreet]='offerObject[i].ulica'
-                [offerArea]='offerObject[i].powierzchnia' 
-                [offerRooms]='offerObject[i].liczba_pokoi'
-                [offerPrice]='splitPrice(offerObject[i].cena)'
-            >
-            </app-offer>
-        </div>
+  </div>
+  <div *ngIf="isOfferExist()">
+    <div *ngFor="let offer of counter(); let i = index">
+      <app-offer
+        [offerID]="offerObject[i].ogloszenieId"
+        [offerImagePath]="offerObject[i].images[0].image_path"
+        [offerTitle]="offerObject[i].tytul"
+        [offerCategory]="offerObject[i].rodzaj"
+        [offerType]="offerObject[i].typ"
+        [offerCity]="offerObject[i].miasto"
+        [offerStreet]="offerObject[i].ulica"
+        [offerArea]="offerObject[i].powierzchnia"
+        [offerRooms]="offerObject[i].liczba_pokoi"
+        [offerPrice]="splitPrice(offerObject[i].cena)"
+      >
+      </app-offer>
     </div>
+  </div>
 </div>
-

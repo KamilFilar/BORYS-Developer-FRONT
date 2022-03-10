@@ -4,27 +4,22 @@ import { InfoService } from 'src/app/config/services/info.service';
 @Component({
   selector: 'app-home-announcements',
   templateUrl: './home-announcements.component.html',
-  styleUrls: ['./home-announcements.component.scss']
+  styleUrls: ['./home-announcements.component.scss'],
 })
-export class HomeAnnouncementsComponent implements OnInit {
 
-  announcmentTittle = "Informacje";
+export class HomeAnnouncementsComponent implements OnInit {
+  announcmentTittle = 'Informacje';
   annoncmentObj: any;
 
-  constructor(
-    private infoService: InfoService
-  ) { }
+  constructor(private infoService: InfoService) {}
 
   getInfoToDisplay() {
-    this.infoService.getInfo().then(
-      (res) => {
-        this.annoncmentObj = res;   
-      }
-    )
+    this.infoService.getInfo().then((res) => {
+      this.annoncmentObj = res;
+    });
   }
 
   ngOnInit(): void {
     this.getInfoToDisplay();
   }
-
 }

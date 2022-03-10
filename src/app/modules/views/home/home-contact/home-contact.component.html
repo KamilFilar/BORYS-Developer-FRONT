@@ -1,79 +1,77 @@
 <div class="container-fluid contact" id="Kontakt">
-    <app-tittle [name]='contactText'></app-tittle>
-    <div class="row justify-content-center">
-        <div class="col-md-9 col-sm-10 col-11">
-            <div class="row justify-content-center">
-                <div class="col-md-10 col-sm-11 col-12 contact__form">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Twoje dane</mat-label>
-                        <input 
-                            type='text'
-                            matInput 
-                            placeholder="Imię i nazwisko (rozdzielone spacją)"
-                        />
-                      </mat-form-field> 
-                </div>
-                <div class="col-md-10 col-sm-11 col-12 contact__form" >
-                    <mat-form-field appearance="fill">
-                        <mat-label>Adres email</mat-label>
-                        <input 
-                            type='email'
-                            matInput 
-                            placeholder="Podaj swój adres email"
-                        />
-                      </mat-form-field> 
-                </div>
-                <div class="col-md-10 col-sm-11 col-12 contact__form">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Numer telefonu</mat-label>
-                        <input 
-                            type='tel'
-                            matInput 
-                            placeholder="Podaj swój numer telefonu"
-                        />
-                      </mat-form-field> 
-                </div>
-                <div class="col-md-10 col-sm-11 col-12 contact__form">
-                    <mat-form-field appearance="fill">
-                        <mat-label>Treść wiadomości</mat-label>
-                        <textarea 
-                            matInput
-                            placeholder="W czym możemy pomóc?"
-                            cdkTextareaAutosize
-                            cdkAutosizeMinRows="5"
-                            cdkAutosizeMaxRows="15"
-                        ></textarea>
-                    </mat-form-field> 
-                </div>
-                <div class="col-md-10 col-sm-11 col-12 contact__form">
-                    <div class="row">
-                        <div class="col-1 contact__form--checkbox text-end">
-                            <mat-checkbox #c (click)="isChecked(!c.checked)"></mat-checkbox>
-                        </div>
-                        <div class="col-11">
-                            <p class="contact__form__text">
-                                Wyrażam zgodę na wykorzystywanie moich danych w celu przetwarzania mojego zgłoszenia. 
-                                Informacje i pouczenie o prawie do odwołania zgody są zawarte w 
-                                <a class="contact__form__text--href" target="_blank" [href]='politicSRC'>polityce prywatności</a>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <app-tittle [name]="contactText"></app-tittle>
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-sm-10 col-11">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-sm-11 col-12 contact__form">
+          <mat-form-field appearance="fill">
+            <mat-label>Twoje dane</mat-label>
+            <input
+              type="text"
+              matInput
+              placeholder="Imię i nazwisko (rozdzielone spacją)"
+            />
+          </mat-form-field>
+        </div>
+        <div class="col-md-10 col-sm-11 col-12 contact__form">
+          <mat-form-field appearance="fill">
+            <mat-label>Adres email</mat-label>
+            <input type="email" matInput placeholder="Podaj swój adres email" />
+          </mat-form-field>
+        </div>
+        <div class="col-md-10 col-sm-11 col-12 contact__form">
+          <mat-form-field appearance="fill">
+            <mat-label>Numer telefonu</mat-label>
+            <input
+              type="tel"
+              matInput
+              placeholder="Podaj swój numer telefonu"
+            />
+          </mat-form-field>
+        </div>
+        <div class="col-md-10 col-sm-11 col-12 contact__form">
+          <mat-form-field appearance="fill">
+            <mat-label>Treść wiadomości</mat-label>
+            <textarea
+              matInput
+              placeholder="W czym możemy pomóc?"
+              cdkTextareaAutosize
+              cdkAutosizeMinRows="5"
+              cdkAutosizeMaxRows="15"
+            ></textarea>
+          </mat-form-field>
+        </div>
+        <div class="col-md-10 col-sm-11 col-12 contact__form">
+          <div class="row">
+            <div class="col-1 contact__form--checkbox text-end">
+              <mat-checkbox #c (click)="isChecked(!c.checked)"></mat-checkbox>
             </div>
+            <div class="col-11">
+              <p class="contact__form__text">
+                Wyrażam zgodę na wykorzystywanie moich danych w celu
+                przetwarzania mojego zgłoszenia. Informacje i pouczenie o prawie
+                do odwołania zgody są zawarte w
+                <a
+                  class="contact__form__text--href"
+                  target="_blank"
+                  [href]="politicSRC"
+                  >polityce prywatności
+                </a>.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col-12 contact__btn">
-            <app-button 
-            [name]='sendBtnText'
-            (click)='sendMsg()'
-            data-bs-toggle="modal" 
-            data-bs-target="#alertModal"
-            ></app-button>
-        </div>
+      </div>
     </div>
+    <div class="col-12 contact__btn">
+      <app-button
+        [name]="sendBtnText"
+        (click)="sendMsg()"
+        data-bs-toggle="modal"
+        data-bs-target="#alertModal"
+      ></app-button>
+    </div>
+  </div>
 </div>
 
-<app-alert
-    [tittle]='modalTittle'
-    [msg]='modalMsg'
->
-</app-alert>
+<app-alert [tittle]="modalTittle" [msg]="modalMsg"> </app-alert>

@@ -4,28 +4,22 @@ import { OfferService } from 'src/app/config/services/offer.service';
 @Component({
   selector: 'app-plots',
   templateUrl: './plots.component.html',
-  styleUrls: [
-    './../../../../../assets/styles/offers.scss'  
-  ]
+  styleUrls: ['./../../../../../assets/styles/offers.scss'],
 })
-export class PlotsComponent implements OnInit {
 
+export class PlotsComponent implements OnInit {
   tittleText = 'Działki';
   offerObject: any;
   offerObjectLength: any;
   returnBtn = 'Powrót';
 
-  constructor(
-    private offerService: OfferService,
-  ) { }
+  constructor(private offerService: OfferService) {}
 
   getPlots() {
-    this.offerService.getTypeOffers('działka')?.then(
-      (res) => {
-        this.offerObject = res;
-        this.offerObjectLength = this.offerObject.length;
-      }
-    );
+    this.offerService.getTypeOffers('działka')?.then((res) => {
+      this.offerObject = res;
+      this.offerObjectLength = this.offerObject.length;
+    });
   }
 
   counter() {
@@ -33,8 +27,7 @@ export class PlotsComponent implements OnInit {
   }
 
   isOfferExist() {
-    if (this.offerObjectLength != 0)
-      return true
+    if (this.offerObjectLength != 0) return true;
 
     return false;
   }

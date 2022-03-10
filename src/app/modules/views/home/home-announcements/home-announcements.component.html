@@ -1,13 +1,20 @@
 <div class="container-fluid" id="Info">
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-sm-11 col-11 announcment">
-            <app-tittle [name]='announcmentTittle'></app-tittle>
-            <p class="announcment__text">
-                {{ annoncmentObj.content.content }}
-                Zadzwoń 
-                <a href="tel:+48 606 691 578" class="announcment__text--special">606-691-578</a> lub napisz:
-                <a href="mailto:grupaborysdeweloper@wp.pl" class="announcment__text--special">grupaborysdeweloper@wp.pl</a>.
-            </p>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-sm-11 col-11 announcment">
+      <app-tittle [name]="announcmentTittle"></app-tittle>
+      <p class="announcment__text">
+        {{ annoncmentObj.content.content }}
+        Zadzwoń
+        <a href="tel:+48 606 691 578" class="announcment__text--special">
+         606-691-578
+        </a>
+        lub napisz:
+        <a
+          href="mailto:grupaborysdeweloper@wp.pl"
+          class="announcment__text--special"
+          >grupaborysdeweloper@wp.pl
+        </a>.
+      </p>
     </div>
+  </div>
 </div>

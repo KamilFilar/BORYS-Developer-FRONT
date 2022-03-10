@@ -3,15 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home-welcome',
   templateUrl: './home-welcome.component.html',
-  styleUrls: ['./home-welcome.component.scss']
+  styleUrls: ['./home-welcome.component.scss'],
 })
 
 export class HomeWelcomeComponent implements OnInit {
-
   imgWelcomePath = './../../../../../assets/images/home/welcome.webp';
-  btnName = 'Zobacz ofertę'
+  btnName = 'Zobacz ofertę';
 
-  constructor() { }
+  constructor() {}
 
   scrollToContent() {
     let yOffset = 200;
@@ -20,7 +19,5 @@ export class HomeWelcomeComponent implements OnInit {
     window.scrollTo({ top: target, behavior: 'smooth' });
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

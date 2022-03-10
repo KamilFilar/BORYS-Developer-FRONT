@@ -4,28 +4,22 @@ import { OfferService } from 'src/app/config/services/offer.service';
 @Component({
   selector: 'app-apartments',
   templateUrl: './apartments.component.html',
-  styleUrls: [
-    './../../../../../assets/styles/offers.scss'  
-  ]
+  styleUrls: ['./../../../../../assets/styles/offers.scss'],
 })
-export class ApartmentsComponent implements OnInit {
 
+export class ApartmentsComponent implements OnInit {
   tittleText = 'Mieszkania';
   offerObject: any;
   offerObjectLength: any;
   returnBtn = 'Powrót';
 
-  constructor(
-    private offerService: OfferService,
-  ) { }
+  constructor(private offerService: OfferService) {}
 
   getApartments() {
-    this.offerService.getTypeOffers('mieszkanie')?.then(
-      (res) => {
-        this.offerObject = res;
-        this.offerObjectLength = this.offerObject.length;
-      }
-    );
+    this.offerService.getTypeOffers('mieszkanie')?.then((res) => {
+      this.offerObject = res;
+      this.offerObjectLength = this.offerObject.length;
+    });
   }
 
   counter() {
@@ -33,8 +27,7 @@ export class ApartmentsComponent implements OnInit {
   }
 
   isOfferExist() {
-    if (this.offerObjectLength != 0)
-      return true
+    if (this.offerObjectLength != 0) return true;
 
     return false;
   }
@@ -47,5 +40,4 @@ export class ApartmentsComponent implements OnInit {
     this.getApartments();
     this.isOfferExist();
   }
-
 }
