@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferService } from './config/services/offer.service';
 import { ContactService } from './config/services/contact.service';
+import { InfoService } from './config/services/info.service';
 // Import components
 import { NavbarComponent } from './modules/components/navbar/navbar.component';
 import { NavbarItemComponent } from './modules/components/navbar/navbar-item/navbar-item.component';
@@ -45,6 +46,7 @@ import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-deta
 import { OfferCarouselComponent } from './modules/views/offertype/offer-details/offer-carousel/offer-carousel.component';
 import * as $ from 'jquery';
 import { HomeAnnouncementsComponent } from './modules/views/home/home-announcements/home-announcements.component';
+
 
 
 @NgModule({
@@ -97,7 +99,8 @@ import { HomeAnnouncementsComponent } from './modules/views/home/home-announceme
   providers: [
     // Services
     OfferService,
-    ContactService
+    ContactService,
+    InfoService
   ],
   bootstrap: [AppComponent]
 })
