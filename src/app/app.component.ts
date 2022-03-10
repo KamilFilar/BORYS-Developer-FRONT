@@ -3,8 +3,7 @@ import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html'
 })
 
 export class AppComponent implements OnInit {
@@ -14,10 +13,7 @@ export class AppComponent implements OnInit {
   ) { }
 
   checkCookies() {
-    if (this.cookieService.get('acceptedCookies') === 'yes') {
-      return false;
-    }
-    return true;
+    return this.cookieService.get('acceptedCookies') == 'yes' ? false : true;
   }
 
   ngOnInit(): void {

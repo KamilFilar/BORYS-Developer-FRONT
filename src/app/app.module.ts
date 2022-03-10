@@ -15,6 +15,9 @@ import { FooterComponent } from './modules/components/footer/footer.component';
 import { HeroButtonComponent } from './modules/components/hero-button/hero-button.component';
 import { OfferComponent } from './modules/components/offer/offer.component';
 import { ButtonComponent } from './modules/components/button/button.component';
+// Improt Modals
+import { CookiesInfoComponent } from './modules/modals/cookies-info/cookies-info.component';
+import { AlertComponent } from './modules/modals/alert/alert.component';
 // Import views
 import { PageNotFoundComponent } from './modules/views/page-not-found/page-not-found.component';
 import { PremisesComponent } from './modules/views/offertype/premises/premises.component';
@@ -35,12 +38,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
-import { CookiesInfoComponent } from './modules/modals/cookies-info/cookies-info.component';
-
 import { TittleComponent } from './modules/components/tittle/tittle.component';
 import { NoOffersComponent } from './modules/components/no-offers/no-offers.component';
 import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
-import { AlertComponent } from './modules/modals/alert/alert.component';
+
 import { OfferDetailsComponent } from './modules/views/offertype/offer-details/offer-details.component';
 import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-details/offer-details-label/offer-details-label.component';
 import { OfferCarouselComponent } from './modules/views/offertype/offer-details/offer-carousel/offer-carousel.component';
@@ -66,8 +67,8 @@ import { HomeAnnouncementsComponent } from './modules/views/home/home-announceme
     HomeAboutUsComponent,
     HomeContactComponent,
     // Modals
-    CookiesInfoComponent,
     AlertComponent,
+    CookiesInfoComponent,
     // Components
     NavbarComponent,
     NavbarItemComponent,
