@@ -1,58 +1,61 @@
 <a (click)="goToDetails(offerCategory)">
-<div class="container-fluid">
+  <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 offer">
+      <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-10 col-sm-11 col-11 offer">
+        <div class="row">
+          <div class="col-md-4 col-12 offer__imgBox">
+            <img
+              [src]="offerImagePath"
+              width="100%"
+              height="auto"
+              class="offer__imgBox__img"
+            />
+          </div>
+          <div class="col-md-8 col-12 offer__details">
             <div class="row">
-                <div class="col-md-4 col-12 offer__imgBox">
-                    <img [src]='offerImagePath' width="100%" height="auto" class="offer__imgBox__img" />
-                </div>
-                <div class="col-md-8 col-12 offer__details">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="offer__details--name">
-                                {{ offerTitle }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="offer__details--type">
-                                {{ offerCategory }} na {{ offerType }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="offer__details--location">
-                                Lokalizacja: {{ offerCity }} {{ offerStreet }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="offer__details--area">
-                                Powierzchnia: {{ offerArea }} m<sup>2</sup>
-                                <span> ({{ calcPriceArea() }} PLN/m<sup>2</sup>)</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row" *ngIf='isPlot() == false'>
-                        <div class="col-12">
-                            <p class="offer__details--rooms">
-                                Ilość pokoi: {{ offerRooms }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row offer__details--margin">
-                        <div class="col-12">
-                            <p class="offer__details--price">
-                                {{ offerPrice }} PLN
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-12">
+                <p class="offer__details--name">
+                  {{ offerTitle }}
+                </p>
+              </div>
             </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="offer__details--type">
+                  {{ offerCategory }} na {{ offerType }}
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="offer__details--location">
+                  Lokalizacja: {{ offerCity }}, ul. {{ offerStreet }}
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <p class="offer__details--area">
+                  Powierzchnia: {{ offerArea }} m<sup>2</sup>
+                  <span> ({{ calcPriceArea() }} PLN/m<sup>2</sup>)</span>
+                </p>
+              </div>
+            </div>
+            <div class="row" *ngIf="isPlot() == false">
+              <div class="col-12">
+                <p class="offer__details--rooms">
+                  Ilość pokoi: {{ offerRooms }}
+                </p>
+              </div>
+            </div>
+            <div class="row offer__details--margin">
+              <div class="col-12">
+                <p class="offer__details--price">{{ offerPrice }} PLN</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </a>
