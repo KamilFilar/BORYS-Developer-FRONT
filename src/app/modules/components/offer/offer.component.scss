@@ -1,64 +1,64 @@
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .container-fluid {
-    margin: 20px 0;
+  margin: 20px 0;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .offer {
-    position: relative;
-    background-color: rgb(252, 252, 252);
-    border: 0.01em solid rgba(112, 128, 144, 0.2);
-    transition-duration: .3s;
+  position: relative;
+  background-color: rgb(252, 252, 252);
+  border: 0.01em solid rgba(112, 128, 144, 0.2);
+  transition-duration: 0.3s;
 
-    &:hover {
-        background-color: rgb(247, 247, 247);
-        border: 0.01em solid rgba(112, 128, 144, 0.3);
-        transition-duration: .3s;
+  &:hover {
+    background-color: rgb(247, 247, 247);
+    border: 0.01em solid rgba(112, 128, 144, 0.3);
+    transition-duration: 0.3s;
+  }
+
+  &__imgBox {
+    padding: 0;
+    margin: auto 0;
+
+    &__img {
+      min-height: 180px;
+    }
+  }
+
+  &__details {
+    color: rgb(0, 50, 100);
+    font-family: PlayfairDisplay;
+
+    &--name {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
 
-    &__imgBox {
-        padding: 0;
-        margin: auto 0;
-
-        &__img {
-            min-height: 180px;
-        }
+    &--type,
+    &--location,
+    &--area,
+    &--rooms {
+      margin: 5px 0;
+      font-size: 1.2rem;
     }
 
-    &__details {
-        color: rgb(0, 50, 100);
-        font-family: PlayfairDisplay;
-
-        &--name {
-            margin: 10px 0 3px;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-
-        &--type,
-        &--location,
-        &--area,
-        &--rooms {
-            margin: 3px 0;
-            font-size: 1.2rem;
-        }
-
-        &--price {
-            position: absolute;
-            right: 10px;
-            bottom: 0;
-            font-size: 1.6rem;
-            font-weight: bold;
-        }
-
-        &--margin {
-            margin-top: 5px;
-        }
+    &--price {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      font-size: 1.6rem;
+      font-weight: bold;
     }
+
+    &--margin {
+      margin-top: 5px;
+    }
+  }
 }

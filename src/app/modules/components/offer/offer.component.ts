@@ -23,6 +23,10 @@ export class OfferComponent implements OnInit {
     private router: Router,
   ) { }
 
+  firstLetterUp(item: string){
+    return item.charAt(0).toUpperCase() + item.slice(1);
+  }
+
   goToDetails(category: any) {
     if(category == 'lokal')
       this.router.navigate(['Lokale/', this.offerID]);
@@ -49,6 +53,7 @@ export class OfferComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.offerCategory = this.firstLetterUp(this.offerCategory);
   }
 
 }

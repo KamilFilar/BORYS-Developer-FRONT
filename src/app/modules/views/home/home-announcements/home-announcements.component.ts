@@ -18,9 +18,7 @@ export class HomeAnnouncementsComponent implements OnInit {
   getInfoToDisplay() {
     this.infoService.getInfo().then(
       (res) => {
-        this.annoncmentObj = res;
-        console.log(this.annoncmentObj);
-        
+        this.annoncmentObj = res;   
       }
     )
   }
