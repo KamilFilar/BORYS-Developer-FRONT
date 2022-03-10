@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import * as $ from 'jquery';
 // Import API
 import { HttpClientModule } from '@angular/common/http';
 import { OfferService } from './config/services/offer.service';
@@ -15,6 +16,12 @@ import { FooterComponent } from './modules/components/footer/footer.component';
 import { HeroButtonComponent } from './modules/components/hero-button/hero-button.component';
 import { OfferComponent } from './modules/components/offer/offer.component';
 import { ButtonComponent } from './modules/components/button/button.component';
+import { TittleComponent } from './modules/components/tittle/tittle.component';
+import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
+import { NoOffersComponent } from './modules/components/no-offers/no-offers.component';
+import { OfferDetailsComponent } from './modules/views/offertype/offer-details/offer-details.component';
+import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-details/offer-details-label/offer-details-label.component';
+import { OfferCarouselComponent } from './modules/views/offertype/offer-details/offer-carousel/offer-carousel.component';
 // Improt Modals
 import { CookiesInfoComponent } from './modules/modals/cookies-info/cookies-info.component';
 import { AlertComponent } from './modules/modals/alert/alert.component';
@@ -27,6 +34,7 @@ import { PlotsComponent } from './modules/views/offertype/plots/plots.component'
 // Home
 import { HomeComponent } from './modules/views/home/home.component';
 import { HomeWelcomeComponent } from './modules/views/home/home-welcome/home-welcome.component';
+import { HomeAnnouncementsComponent } from './modules/views/home/home-announcements/home-announcements.component';
 import { HomeSearchOfferComponent } from './modules/views/home/home-search-offer/home-search-offer.component';
 import { HomeOfferComponent } from './modules/views/home/home-offer/home-offer.component';
 import { HomeAboutUsComponent } from './modules/views/home/home-about-us/home-about-us.component';
@@ -38,18 +46,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
-import { TittleComponent } from './modules/components/tittle/tittle.component';
-import { NoOffersComponent } from './modules/components/no-offers/no-offers.component';
-import { SearchOfferResultComponent } from './modules/views/offertype/search-offer-result/search-offer-result.component';
-
-import { OfferDetailsComponent } from './modules/views/offertype/offer-details/offer-details.component';
-import { OfferDetailsLabelComponent } from './modules/views/offertype/offer-details/offer-details-label/offer-details-label.component';
-import { OfferCarouselComponent } from './modules/views/offertype/offer-details/offer-carousel/offer-carousel.component';
-import * as $ from 'jquery';
-import { HomeAnnouncementsComponent } from './modules/views/home/home-announcements/home-announcements.component';
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +56,7 @@ import { HomeAnnouncementsComponent } from './modules/views/home/home-announceme
     ApartmentsComponent,
     PlotsComponent,
     // Home
+    HomeAnnouncementsComponent,
     HomeComponent,
     HomeWelcomeComponent,
     HomeSearchOfferComponent,
@@ -74,15 +71,14 @@ import { HomeAnnouncementsComponent } from './modules/views/home/home-announceme
     NavbarItemComponent,
     FooterComponent,
     HeroButtonComponent,
-    OfferComponent,
     ButtonComponent,
     TittleComponent,
-    NoOffersComponent,
     SearchOfferResultComponent,
+    NoOffersComponent,
+    OfferComponent,
     OfferDetailsComponent,
     OfferDetailsLabelComponent,
     OfferCarouselComponent,
-    HomeAnnouncementsComponent,
   ],
   imports: [
     BrowserModule,

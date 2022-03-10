@@ -1,43 +1,47 @@
 <nav class="navbar-expand-xl fixed-top">
   <div class="navbar container-fluid">
     <div class="navbar-brand" (click)="scrollToTop()">
-      <img [src]="logoPath" width="100%" height="auto"/>
+      <img [src]="logoPath" width="100%" height="auto" />
     </div>
-    <button 
-      class="navbar-toggler navbar__btn"  
-      data-bs-toggle="collapse" 
+    <button
+      class="navbar-toggler navbar__btn"
+      data-bs-toggle="collapse"
       data-bs-target=".navbar__items"
-      aria-controls=".navbar__items" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation" 
+      aria-controls=".navbar__items"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
       id="togglerButton"
     >
       <fa-icon [icon]="faBars" class="fa-lg navbar__btn--icon"></fa-icon>
     </button>
     <div class="collapse navbar-collapse justify-content-end navbar__items">
       <ul class="navbar-nav">
-        <app-navbar-item 
-          [value]="values.plot" 
-          [navItemPhoto]="photos.plot" 
-          routerLink="Działki">
+        <app-navbar-item
+          [value]="values.plot"
+          [navItemPhoto]="photos.plot"
+          routerLink="Działki"
+        >
         </app-navbar-item>
-        <app-navbar-item 
-          [value]="values.houses" 
-          [navItemPhoto]="photos.houses" 
-          routerLink="Domy">
+        <app-navbar-item
+          [value]="values.houses"
+          [navItemPhoto]="photos.houses"
+          routerLink="Domy"
+        >
         </app-navbar-item>
-        <app-navbar-item 
-          [value]="values.premises" 
-          [navItemPhoto]="photos.premises" 
-          routerLink="Lokale">
+        <app-navbar-item
+          [value]="values.premises"
+          [navItemPhoto]="photos.premises"
+          routerLink="Lokale"
+        >
         </app-navbar-item>
-        <app-navbar-item 
-          [value]="values.flats" 
-          [navItemPhoto]="photos.flats" 
-          routerLink="Mieszkania">
+        <app-navbar-item
+          [value]="values.flats"
+          [navItemPhoto]="photos.flats"
+          routerLink="Mieszkania"
+        >
         </app-navbar-item>
-        <app-navbar-item 
-          [value]="values.contact" 
+        <app-navbar-item
+          [value]="values.contact"
           [navItemPhoto]="photos.contact"
           (click)="scrollToContact()"
         >

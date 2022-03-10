@@ -9,11 +9,11 @@ import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './footer.component.html',
   styleUrls: [
     './footer.component.scss',
-    './../../../../assets/styles/offers.scss'
-  ]
+    './../../../../assets/styles/offers.scss',
+  ],
 })
-export class FooterComponent implements OnInit {
 
+export class FooterComponent implements OnInit {
   faMobileAlt = faMobileAlt;
   faMailBulk = faMailBulk;
   faMapMarkedAlt = faMapMarkedAlt;
@@ -22,9 +22,7 @@ export class FooterComponent implements OnInit {
 
   actualYear: number = new Date().getFullYear();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

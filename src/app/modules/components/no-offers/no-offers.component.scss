@@ -1,26 +1,26 @@
 .container-fluid {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .noOffer {
-    position: relative;
-    padding: 15px 0 5px;
-    background-color: rgb(252, 252, 252);
-    border: 0.01em solid rgba(112, 128, 144, 0.2);
+  position: relative;
+  padding: 15px 0 5px;
+  background-color: rgb(252, 252, 252);
+  border: 0.01em solid rgba(112, 128, 144, 0.2);
 
-    &--text {
-        font-family: "Inter", serif;
-        font-display: swap;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: rgb(0, 50, 100);
-        text-align: center;
-        margin-right: 0px;
-        display: inline-block;
-    }
+  &--text {
+    font-family: "Inter", serif;
+    font-display: swap;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(0, 50, 100);
+    text-align: center;
+    margin-right: 0px;
+    display: inline-block;
+  }
 
-    & img {
-        margin: -14px 0 0 10px;
-        clear: both;
-    }
+  & img {
+    margin: -14px 0 0 10px;
+    clear: both;
+  }
 }

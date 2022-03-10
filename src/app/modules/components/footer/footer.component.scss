@@ -1,67 +1,67 @@
 .footer {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    &--border {
-        padding: 5px 0;
-        border-top: 0.01em solid rgba(112, 128, 144, 0.2);
-        background-color: rgb(250, 250, 250);
+  &--border {
+    padding: 5px 0;
+    border-top: 0.01em solid rgba(112, 128, 144, 0.2);
+    background-color: rgb(250, 250, 250);
+  }
+
+  &__logo {
+    padding: 0;
+    position: relative;
+
+    & img {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 0.01em solid rgba(112, 128, 144, 0.2);
+    }
+  }
+
+  &__text {
+    font-family: "Inter", serif;
+    font-display: swap;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 50, 100);
+
+    & p {
+      margin: 5px 0;
+    }
+  }
+
+  &__icon {
+    margin: auto;
+    text-align: right;
+    padding: 5px 0 3px;
+
+    & fa-icon {
+      color: rgb(0, 80, 170);
+    }
+  }
+
+  &--space {
+    margin: 10px 0;
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgb(0, 50, 100);
+    border-top: 0.01em solid rgba(112, 128, 144, 0.2);
+    background-color: rgb(245, 245, 245);
+
+    & p {
+      margin: 0;
+      padding: 5px 0 0;
     }
 
-    &__logo {
-        padding: 0;
-        position: relative;
-
-        & img {
-            position: absolute;
-            margin: auto;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border: 0.01em solid rgba(112, 128, 144, 0.2);
-        }
+    &--color {
+      color: rgb(0, 80, 170);
     }
-
-    &__text {
-        font-family: "Inter", serif;
-        font-display: swap;
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: rgb(0, 50, 100);
-        
-        & p {
-            margin: 5px 0;
-        }
-    }
-
-    &__icon {
-        margin: auto;
-        text-align: right;
-        padding: 5px 0 3px;
-
-        & fa-icon {
-            color: rgb(0, 80, 170);
-        }
-    }
-
-    &--space {
-        margin: 10px 0;
-    }
-
-    &__copyright {
-        text-align: center;
-        font-size: 0.7rem;
-        color: rgb(0, 50, 100);
-        border-top: 0.01em solid rgba(112, 128, 144, 0.2);
-        background-color: rgb(245, 245, 245);
-
-        & p {
-            margin: 0;
-            padding: 5px 0 0;
-        }
-
-        &--color {
-            color: rgb(0, 80, 170);
-        }
-    }
+  }
 }
