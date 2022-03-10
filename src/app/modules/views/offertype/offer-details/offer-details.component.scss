@@ -52,9 +52,9 @@ p {
     font-size: 1rem;
 
     &--about {
+      white-space: pre-wrap;
       font-size: 1rem;
-      text-indent: 15px;
-      margin: 15px 20px 25px;
+      margin: 15px 4% 20px;
     }
 
     &--color {
