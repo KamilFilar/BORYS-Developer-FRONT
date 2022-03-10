@@ -1,36 +1,36 @@
 .modal-header {
-    button {
-        border: none;
-        background: none;
+  button {
+    border: none;
+    background: none;
 
-        fa-icon {
-            color: rgb(0, 50, 100);
-            transition-duration: 0.4s;
+    fa-icon {
+      color: rgb(0, 50, 100);
+      transition-duration: 0.4s;
 
-            &:hover {
-                color: rgb(0, 80, 170);
-                transition-duration: 0.2s;
-            }
-        }
+      &:hover {
+        color: rgb(0, 80, 170);
+        transition-duration: 0.2s;
+      }
     }
+  }
 }
 
 .modal-body,
 .modal-title {
-    color: rgb(0, 50, 100);
+  color: rgb(0, 50, 100);
 }
 
 .modal-title {
-    text-indent: 15px;
-    font-size: 1.2rem;
-    font-weight: 550;
-    margin: 0;
+  text-indent: 15px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin: 0;
 }
 
 .modal-body {
-    p {
-        text-indent: 15px;
-        font-size: 1rem;
-        margin: 0;
-    }
+  p {
+    text-indent: 15px;
+    font-size: 1rem;
+    margin: 0;
+  }
 }

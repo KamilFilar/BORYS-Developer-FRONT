@@ -32,7 +32,7 @@
     letter-spacing: 0.75px;
     font-size: 1rem;
     transition-duration: 0.35s;
-  
+
     &:hover {
       color: rgb(156, 156, 156);
       transition-duration: 0.35s;
@@ -50,8 +50,8 @@
   .contentCenter {
     margin-top: 10px;
     .cookiesInfo__href {
-        display: block;
-        float: none;
+      display: block;
+      float: none;
     }
   }
 }

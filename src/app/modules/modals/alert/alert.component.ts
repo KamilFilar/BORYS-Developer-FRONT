@@ -4,18 +4,16 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-alert',
   templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.scss']
+  styleUrls: ['./alert.component.scss'],
 })
-export class AlertComponent implements OnInit {
 
+export class AlertComponent implements OnInit {
   @Input() tittle = '';
   @Input() msg = '';
 
-  faTimesCircle = faTimesCircle; 
+  faTimesCircle = faTimesCircle;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
