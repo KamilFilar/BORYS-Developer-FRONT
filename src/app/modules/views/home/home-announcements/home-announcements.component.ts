@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoService } from 'src/app/config/services/info.service';
 
 @Component({
   selector: 'app-home-announcements',
@@ -8,10 +9,24 @@ import { Component, OnInit } from '@angular/core';
 export class HomeAnnouncementsComponent implements OnInit {
 
   announcmentTittle = "Informacje";
+  annoncmentObj: any;
 
-  constructor() { }
+  constructor(
+    private infoService: InfoService
+  ) { }
+
+  getInfoToDisplay() {
+    this.infoService.getInfo().then(
+      (res) => {
+        this.annoncmentObj = res;
+        console.log(this.annoncmentObj);
+        
+      }
+    )
+  }
 
   ngOnInit(): void {
+    this.getInfoToDisplay();
   }
 
 }
