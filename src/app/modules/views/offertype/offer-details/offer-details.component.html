@@ -16,12 +16,12 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <p class="offerDetails__subtitle">
-                        Cena: {{ splitPrice(singleOffer.cena) }} {{ setPriceUnit() }}
+                        Szczegółowe informacje:
                     </p>
                 </div>
-                <div class="col-12">
-                    <p class="offerDetails__subtitle">
-                        Szczegółowe informacje:
+                <div class="col-12 text-center">
+                    <p class="offerDetails__price">
+                      {{ splitPrice(singleOffer.cena) }} {{ setPriceUnit() }}
                     </p>
                 </div>
                 <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12">
@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-12">
                     <p class="offerDetails__text--about">
-                        {{singleOffer.opis }}
+                        {{ singleOffer.opis }}
                     </p>
                 </div>
             </div>
