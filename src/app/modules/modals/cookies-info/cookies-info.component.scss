@@ -1,31 +1,27 @@
 .cookiesInfo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
-    border-top: 2px solid rgb(180, 180, 180);
-    background-color: rgba(230, 230, 230, 0.9);
-    animation: fadeIn ease 1.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    padding: 10px 15px 5px;
-  
-    p {
-      display: -webkit-flex;
-      display: flex;
-      align-items: center;
-      color: black;
-      text-indent: 15px;
-      font-size: 1rem;
-      line-height: 1.2rem;
-    }
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  border-top: 2px solid rgb(180, 180, 180);
+  background-color: rgba(230, 230, 230, 0.9);
+  animation: fadeIn ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 10px 15px 5px;
+
+  &__text {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-indent: 15px;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
-  
-  .hideCookiesInfo {
-    display: none !important;
-  }
-  
-  .href {
+
+  // Btn not accept
+  &__href {
     display: -webkit-flex;
     display: flex;
     align-items: center;
@@ -43,14 +39,29 @@
       text-decoration: underline;
     }
   }
-  
-  // Fade in animation
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
+}
+
+// Hide component when cookies is accepted
+.hideCookiesInfo {
+  display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .contentCenter {
+    margin-top: 10px;
+    .cookiesInfo__href {
+        display: block;
+        float: none;
     }
   }
-  
+}
+
+// Fade in animation
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

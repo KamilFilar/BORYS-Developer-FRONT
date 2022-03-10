@@ -1,17 +1,17 @@
 <div class="cookiesInfo" id="cookiesInfo">
     <div class="row">
         <div class="col-8">
-            <p>
+            <p class="cookiesInfo__text">
                 Kolejna inforamcja o cookies na którą nawet nie zwrócisz uwagi, ale musze Cię o tym poinformować.
                 Korzystając ze strony wyrażasz zgodę na ich używanie, w przeciwnym wypadku googluj dalej!
             </p>
         </div>
         <div class="col-4 text-center">
-          <div class="row justify-content-end">
-              <div class="col-7">
-                <a [href]="unaccept" class="href">Odrzuć</a>
+          <div class="row justify-content-center">
+              <div class="col-xxl-9 col-xl-8 col-lg-7 col-md-5 col-12 contentCenter">
+                <a [href]="unaccept" class="cookiesInfo__href">Odrzuć</a>
               </div>
-              <div class="col-5">
+              <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-7 col-12 order-first order-md-last">
                 <app-button
                     [name]="btnName"
                     (click)="acceptCookies()"
@@ -19,7 +19,6 @@
                 </app-button>
               </div>
           </div>
-            
         </div>
     </div>
 </div>
