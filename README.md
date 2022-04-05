@@ -1,4 +1,4 @@
-# Borys DEV
+# Borys DEV 🏠
 
 ## Get started
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
@@ -11,7 +11,7 @@ git clone https://github.com/KamilFilar/BORYS-Developer-FRONT.git
 ```
 2. Go to source dir:
 ```
-cd borys-dev
+cd borys-dev-master
 ```
 
 
@@ -33,9 +33,11 @@ Use `ng serve -o` to automatically  open project in your browser:
 ng serve -o
 ```
 
-
 ## Summary
 If you did everything correctly, the project should be launched on `http://localhost:4200`. :ok_hand:
 ```
 http://localhost:4200
 ```
+
+## License:
+Copyright © by Kamil Filar
